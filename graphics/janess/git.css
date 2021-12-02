@@ -1,0 +1,135 @@
+#gitCommit{
+    margin-top: 20px;
+}
+.git-commit{
+    width: 90%;
+    margin: 5px;
+    border: 1px solid gray;
+    color: crimson;
+    border-radius: 5px;
+    font-size: 15px;
+    display: inline-block;
+    padding: 2px;
+    resize: vertical;
+}
+label{
+    display: inline-block;
+    color: crimson;
+    width: 8%;
+    text-align: center;
+    color: rgb(64, 64, 64);
+    color: white;
+    vertical-align: top;
+}
+#codeEdit{
+    font-size: 15px;
+    height: 10in;
+}
+.CodeMirror-linenumber{
+    color: white;
+    text-align: center;
+    background-color: rgb(64, 64, 64);
+    background-color: transparent;
+}
+.CodeMirror-linenumbers{
+    background-color: transparent;
+}
+.CodeMirror-gutters{
+    background-color: steelblue;
+    border: none;
+}
+/*.CodeMirror pre.CodeMirror-line, .CodeMirror pre.CodeMirror-line-like{
+    background: unset;
+    background-color: tomato;
+    color: white;
+    border-bottom: 1px dashed rgba(0, 128, 128, 0.192);
+}*/
+.cm-property{
+    color: teal;
+}
+
+.git-action {
+    float: right;
+    margin-right: 20%;
+}
+.git-action button{
+    outline: none;
+    border: none;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: rgb(64, 64, 64);
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    color: white;
+    border: 1px solid white;
+}
+
+.nowidth{
+    width: unset;
+}
+#codeToolbar{
+    margin: 5px;
+    border-left: 2px solid steelblue;
+    margin-left: 0px;
+    padding-left: 5px;
+}
+#codeToolbar label{
+    text-align: left;
+}
+#codeToolbar .caption{
+    width: unset;
+    color: rgb(179, 223, 219);
+}
+#codeToolbar .git-commit{
+    color: steelblue;
+}
+.codeToolbar-action{
+    float: left;
+    margin-right: 5%;
+}
+.codeToolbar-action button{
+    outline: none;
+    border: none;
+    font-size: 15px;
+    background-color: rgb(64, 64, 64);
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    color: white;
+    vertical-align: middle;
+    color: lightblue;
+    border: 1px solid pink;
+    /*background-color: whitesmoke;
+    color: rgb(64, 64, 64);*/
+}
+
+.member-card{
+    border: 1px solid white;
+    margin: 5px;
+    width: max-content;
+    padding: 2px;
+    padding: 5px;
+    padding-left: 10px; padding-right: 10px;
+    border-radius: 10px;
+    height: max-content;
+    display: inline-block;
+}
+.member-img-div{
+    height: 0.4in;
+    width: 0.4in;
+    border-radius: 50%;
+    vertical-align: middle;
+    display: inline-block;
+    overflow: hidden;
+    text-align: center;
+}
+.member-img-div img{
+    height: 100%;
+}
+.member-card .member-name{
+    display: inline-block;
+    margin-top: 0px;
+    color: white;
+    vertical-align: middle;
+}

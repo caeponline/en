@@ -1,0 +1,45 @@
+.jvso{
+    width: 80%;
+    border-collapse: collapse;
+    font-size: 15px;
+}
+td{
+    text-transform: capitalize;
+}
+.jvso-header{
+    background-color: teal;
+    background-color: steelblue;
+    background-color: transparent;
+    color: white;
+    color: steelblue;
+    border-collapse: collapse;
+    font-weight: bold;
+    min-height: 0.4in;
+    vertical-align: middle;
+}
+.jvso-header td{
+    height: 0.3in;
+    padding: 5px;
+}
+.jvso-r1{
+    background-color: rgb(64, 64, 64);
+    background-color: transparent;
+    color: white;
+    color: rgb(64, 64, 64);
+    border-bottom: 2px solid white;
+    border-bottom-color: steelblue;
+}
+.jvso-r1 td{
+    padding: 5px;
+}
+.jvso-r2{
+    background-color: rgb(64, 64, 64);
+    background-color: transparent;
+    color: white;
+    color: rgb(64, 64, 64);
+    border-bottom: 2px solid white;
+    border-bottom-color: steelblue;
+}
+.jvso-r2 td{
+    padding: 5px;
+}

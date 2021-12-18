@@ -1,0 +1,27 @@
+.pageSubtitle{
+    text-transform: capitalize;
+}
+.tabhead{
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    text-transform: capitalize;
+}
+.tabhead::before{
+    content: 'n';
+    text-transform: none;
+    font-family: sporto1;
+    float: left;
+    font-size: 90%;
+    margin-right: 10px;
+}
+.tabOpened::before{
+    content: 'l';
+}
+.tabClosed::before{
+    content: 'n';
+}
+.tab{
+    width: 80%;
+    margin-left: 3%;
+}

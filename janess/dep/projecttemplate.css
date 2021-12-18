@@ -1,0 +1,99 @@
+body{
+    padding: 10px;
+}
+.pageTitle{
+    font-size: 50px;
+    font-family: Lucida Console;
+    width: max-content;
+    max-width: 70%;
+}
+.heading{
+    padding-bottom: 30px;
+    border-bottom: 3px solid tomato;
+}
+.content{
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 10px;
+    padding-top: 30px;
+    font-size: 18px;
+}
+
+.deps{
+    margin-bottom: 30px;
+}
+.deps::before{
+    content: 'needs';
+    font-weight: bold;
+}
+.dep::before{
+    content: 'e';
+    font-family: sporto1;
+    display: inline-block;
+    transform: rotateZ(30deg);
+    color: steelblue;
+    margin-left: 20px;
+    margin-right: 5px;
+}
+.soft::before{
+    content: '.';
+    font-family: sporto2;
+    transform: unset;
+}
+.par-title{
+    display: block;
+    max-width: 60%;
+    font-size: 120%;
+}
+.subtitlePoint{
+    display: block;
+}
+/*.subtitlePoint::before{
+    content: '.';
+    font-family: sporto2;
+    float: left;
+    margin-right: 5px;
+    margin-left: 0.4in;
+}*/
+
+a{
+    text-decoration: none;
+}
+a::after{
+    content: '$';
+    font-family: sporto1;
+    font-size: 60%;
+    margin-left: 5px;
+    vertical-align: top;
+}
+.nobefore::after{
+    content: '';
+}
+/*Editor*/
+.cmdline{
+    display: block;
+    line-height: 20px;
+}
+.keyword1{
+    color: rgb(250, 144, 125);
+    font-weight: bolder;
+}
+.keyword2{
+    color: rgb(131, 183, 226);
+    font-weight: bold;
+}
+.k3{
+    color: rgb(81, 236, 236);
+}
+.comment{
+    color: rgb(109, 226, 160);
+}
+.codingGround{
+    width: max-content;
+    color: white;
+    min-width: 50%;
+    padding: 5px;
+    padding-left: 10px;
+    background-color: rgb(85, 87, 110);
+}

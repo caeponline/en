@@ -1,0 +1,63 @@
+*{
+    font-family: tajawal;
+}
+body{
+    background-color: whitesmoke;
+    margin: 0px;
+}
+.nb{
+    position: fixed;
+    height: 0.7in;
+    background-color: white;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    z-index: 1;
+}
+.nbm{
+    height: 0.7in;
+}
+
+.nbtns{
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+    height: 100%;
+}
+.nbtn{
+    height: 100%;
+    outline: none;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: transparent;
+    border-bottom: 2px solid teal;
+    border-bottom-color: transparent;
+}
+.nbtn:hover{
+    border-bottom-width: 25px;
+    border-bottom-style: groove;
+    border-bottom-color: turquoise;
+    background-color: teal;
+    background-color: rgb(47, 51, 82);
+    border-bottom-color: rgb(36, 48, 138);
+    color: white;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.steel:hover{
+    background-color: steelblue;
+    border-bottom-color: cornflowerblue;
+}
+.nlogo{
+    height: 100%;
+    float: left;
+    margin-left: 20px;
+}
+.nsearch{
+    position: fixed;
+    right: 0.5in;
+    top: 15px;
+    max-height: max-content;
+}
+

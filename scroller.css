@@ -1,0 +1,14 @@
+#scroller{
+    position: fixed;
+    height: 0.1in;
+    height: 0.05in;
+    height: 0.03in;
+    background-color: teal;
+    width: 0px;
+    left: 0px;
+    top: 0in;
+    z-index: 1;
+    border-radius: 50px;
+    filter: opacity(60%);
+    background: linear-gradient(90deg, teal, tomato, steelblue);
+}

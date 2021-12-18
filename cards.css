@@ -1,0 +1,40 @@
+.card{
+    flex-basis: 2.8in;
+    min-height: 2in;
+    background-color: gainsboro;
+    margin: 5px;
+    padding: 5px;
+    /*border-top-left-radius: 10px;
+    border-top-right-radius: 10px;*/
+}
+.card:hover .card-headline{
+    color: steelblue;
+}
+.card:hover .jbtn{
+    background-color: whitesmoke;
+    color: steelblue;
+    font-weight: bold;
+    border: 2px solid steelblue;
+}
+.card img{
+    width: 100%;
+    filter: opacity(90%);
+    /*border-top-left-radius: 10px;
+    border-top-right-radius: 10px;*/
+}
+.card-headline{
+    display: block;
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+.card-action{
+    float: right;
+    margin-right: 20px;
+}
+.price{
+    border: none;
+    outline: none;
+    background-color: rgb(64, 64, 64);
+    color: whitesmoke;
+}

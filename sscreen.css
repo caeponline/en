@@ -1,0 +1,64 @@
+.screen, .halfScreen{
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+.halfScreen{
+    min-height: 50vh;
+    min-height: 60vh;
+}
+
+.galimg{
+    position: absolute;
+    top: -150px;
+    left: 0px;
+    width: 100%;
+    filter: contrast(30%);
+}
+#screen1{
+    background:  linear-gradient(steelblue, steelblue), url(./bonding-daylight-friends-1645634‫‬.jpg);
+    background-position: center;
+    background-size: cover;
+    background-position-y: -150px;
+    background-blend-mode: multiply;
+}
+#screenstory, #screenres{
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+    /*padding-top: 1in;*/
+    
+}
+#storybody, #resbody{
+    padding: 20px;
+    display: block;
+    width: calc(80% - 40px);
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.screenCenterHeadline{
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+    text-align: center;
+    color: white;
+    margin-top: 10vh;
+    font-size: 60px;
+}
+#screenCollaboration-cards, #screenTools-cards, #screenPeers-cards{
+    display: flex; width: 80%; margin-left: 10%; margin-right: 10%;
+    flex-wrap: wrap;
+}
+#screenAbout{
+    padding-top: 0.1in; width: calc(100% - 60px);
+}
+#screenstory #storytitle{
+    width: 80%;
+}
+#storyimgdiv{
+    height: fit-content; overflow: hidden; background-color: teal; width: 50%;
+}
+#storyimgcaption{
+    color: rgb(64, 64, 64); width: 60%; display: block; font-style: italic;
+}

@@ -1,0 +1,38 @@
+#mainAction1{
+    position: fixed;
+    display: block;
+    left: 0px;
+    top: 3.5in;
+    transform: rotateZ(-90deg);
+    transform-origin: 0% 00%;
+    filter: opacity(40%);
+}
+#mainAction1:hover{
+    filter: unset;
+    transition: 0.5s;
+}
+#mainAction1 .action{
+    margin: 0px;
+    /*display: inline-block;*/
+    background-color: teal;
+    background-color: slateblue;
+    background-color: chocolate;
+    color: white;
+    font-size: 18px;
+    padding: 5px;
+    padding-left: 10px; padding-right: 10px;
+    padding-top: 0.25in;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    cursor: pointer;
+    height: 0.3in;
+    margin-top: -0.2in;
+    float: right;
+    margin-left: 5px;
+    text-transform: capitalize;
+}
+
+#mainAction1 .action:hover{
+    margin-top: 0px;
+    transition: 0.5s;
+}

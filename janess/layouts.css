@@ -1,0 +1,12 @@
+.flex{
+    display: flex;
+}
+.flex-halfWidth{
+    flex-basis: calc(50% - 60px);
+    padding: 30px;
+}
+.actionOfHalfWidth{
+    float: right;
+    margin-right: 200px;
+    margin-top: 30px;
+} .actionOfHalfWidth button {font-size: 18px; font-weight: bold;}

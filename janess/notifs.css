@@ -1,0 +1,115 @@
+.notif{
+    width: 90%;
+    margin-right: 5%;
+    margin-left: 5%;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 5px;
+    display: inline-block;
+}
+.pink{
+    background-color: rgba(241, 155, 227, 0.323);
+    box-shadow: 0px 0px 1px 0px purple;
+    box-shadow: 0px 0px 1px 0px rgb(212, 97, 212);
+}
+.teal{
+    background-color: rgba(182, 243, 240, 0.712);
+    box-shadow: 0px 0px 1px 0px teal;
+}
+.gray{
+    background-color: rgba(243, 232, 182, 0.712);
+    box-shadow: 0px 0px 1px 0px salmon;
+}
+.notif-headline{
+    font-size: 16px;
+    font-weight: bold;
+    display: block;
+}
+.notif-headline::before{
+    content: 'L';
+    font-family: sporto3;
+    font-size: 80%;
+    padding: 3px;
+    display: inline-block;
+    color: rgb(46, 87, 83);
+    color: rgb(81, 197, 197);
+}
+.notifAction{
+    width: calc(100% - 40px);
+    min-height: 0.3in;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+.notifAction button{
+    margin-top: 5px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+}
+.pink .notifAction button{
+    background-color: palevioletred;
+}
+.teal .notifAction button{
+    background-color: teal;
+}
+.gray .notifAction button{
+    background-color: salmon;
+}
+.pink .notif-headline::before{
+    color: palevioletred;
+}
+.gray .notif-headline::before{
+    color: salmon;
+}
+.notifAction .textbox{
+    width: 100%;
+    border: unset;
+    height: unset;
+    margin: unset;
+    font-size: unset;
+    padding: unset;
+    margin-top: 5px;
+}
+.notifFloatHandler{
+    z-index: 1;
+    bottom: 10px;
+    right: 10px;
+    position: fixed;
+    margin-left: unset;
+    margin-right: unset;
+}
+.notifFloatHandler .notif{
+    display: block;
+}
+.notifFloatHandler .pink{
+    background-color: rgb(247, 197, 213);
+}
+.notifStdSize{
+    flex-basis: 3.2in;
+    height: unset;
+    min-height: 1in;
+}
+
+/**/
+.janeNotif{
+    background-color: steelblue;
+    background-color: transparent;
+    color: white;
+    color: rgba(167, 28, 143, 0.723);
+    color: rgb(64, 64, 64);
+    box-shadow: none;
+}
+.janeNotif .notif-headline::before{
+    color: white;
+    color: slateblue;
+    color: steelblue;
+}  
+.janeNotif .point::before{
+    color: white;
+    color: rgba(70, 131, 180, 0.815);
+}
+.newnotif{
+    background-color: transparent;
+}

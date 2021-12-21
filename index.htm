@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="sscreen.css">
+    <link rel="stylesheet" href="items.css">
+    <link rel="stylesheet" href="./scroller.css">
+    <link rel="stylesheet" href="./janess/jss.css">
+    <link rel="stylesheet" href="./cards.css">
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body onscroll="sc()" id="bodyy">
+
+    <div id="headingo" style="width: 100%;">
+        <img src="./worldHigh.svg" style="height: 1.3in; width: 1.3in; margin-top: 0.3in; border-radius: 50%;" class="nlogo mobile-logo" alt="">
+        <button style="text-align: left; background-color: transparent; outline: none; border: none; height: 100%; vertical-align: middle; font-size: 30px; margin-left: 30px;">
+            <strong>Here is:</strong>
+            Diversity-Driven • Student-Centered • Academic Perspective  • Change-Capable
+        </button>
+    </div>
+    <style>
+        #headingo{
+            height: 2in;
+            background-color: whitesmoke; color: rgb(47, 51, 82);
+        }
+        #headingo button{
+            color: rgb(47, 51, 82);
+        }
+        @media screen and (max-width: 600px){
+            #headingo{
+                height: unset;
+                background-color: rgb(47, 51, 82);
+                color: whitesmoke;
+            }
+            #headingo button{
+                color: whitesmoke;
+                padding-bottom: 20px;
+            }
+            #headingo img{
+                background-color: white;
+            }
+            .nb, .nbm{
+                height: 0px;
+            }
+        }
+    </style>
+    <style type="text/css">
+        .land
+        {
+            fill: #CCCCCC;
+            fill-opacity: 1;
+            stroke:white;
+            stroke-opacity: 1;
+            stroke-width:0.5;
+        }
+        .land:hover{
+            fill: blue;
+        }
+        #SY, #CA, #GB{
+            fill: steelblue;
+        }
+    </style>
+
+    <center>
+        <h1 style="padding-top: 0.5in; padding-bottom: 0.5in; margin: 0px; font-size: 50px; background-color: rgba(47, 51, 82, 0.963); color: antiquewhite;">
+            soon,...
+        </h1>
+    </center>
+    <div class="screen" id="screenTools"  style=" background-color: rgba(47, 51, 82, 0.963); color: white; padding-top: 0.6in;">
+        <div id="screenTools-cards">
+            <div class="notif teal notifStdSize newnotif" style="padding-bottom: 0.5in">
+                <span style="font-family: cov; font-size: 70px; width: 100%; text-align: center; display: block; color: tan;">
+                    q
+                </span>
+                <span class="notif-headline before-login"  style="font-size: 30px;">Design Learning Process & Setup the Outcomes</span>
+                <br>
+                <!--<center>
+                    <button class="jbtn  font-bold">SignUp</button>
+                </center>-->
+            </div>
+            <div class="notif pink notifStdSize newnotif">
+                <span style="font-family: cov; font-size: 70px; width: 100%; text-align: center; display: block; color: rgba(210, 180, 140, 0.726);">
+                    p
+                </span>
+                <span class="notif-headline before-mission"  style="font-size: 30px;">Prepare with your supervisor and start the virtual semester</span>
+            </div>
+            <div class="notif gray notifStdSize newnotif">
+                <span style="font-family: cov; font-size: 70px; width: 100%; text-align: center; display: block; color: tan;">
+                    s
+                </span>
+                <span class="notif-headline before-tools"  style="font-size: 30px;">Finish your Virtual Semester then Represent & Semenar</span>
+                <!--<center>
+                    <br>
+                    <button class="jbtn  font-bold">View Scheuled Semenars</button>
+                </center>-->
+            </div>
+        </div>
+    </div>
+
+    <div id="scroller">
+
+    </div>
+
+</body>
+</html>
+
+<script>
+    for (let index = 0; index < document.getElementsByClassName("land").length; index++) {
+        const element = document.getElementsByClassName("land")[index];
+        element.addEventListener("click", ()=>{
+            console.log(element.getAttribute("title"));
+        }, false);
+    }
+</script>
+<script src="./login.js"></script>
+<script>
+    //test = "JANE is an Outcome Based Teaching & Learning collaboration platform, it's about true collaboration in order to help those who have passion about development to get true education";
+    test = "Here's to the round pegs in the square holes";
+
+    /*time = test.length * 150 + (2000);
+    type();
+    setInterval(() => {
+        type();
+    }, time);
+
+    function type(){
+        i = 0;
+        document.getElementById("word").innerHTML = "";
+        testo = setInterval(() => {
+            if(i >= test.length){
+                clearInterval(testo);
+            } else {
+                document.getElementById("word").innerHTML += test[i];
+                i++;
+            }
+        }, 100);
+    }*/
+</script>
+
+<script>
+    s = 0;
+    function sc(){
+        thisPointPercentageOfHeight = (scrollY * 100) / (document.getElementById("bodyy").scrollHeight - 700);
+        document.getElementById("scroller").style.width = ((thisPointPercentageOfHeight * document.getElementById("bodyy").clientWidth) / 100) + "px";
+    }
+
+</script>

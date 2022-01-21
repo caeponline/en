@@ -7,22 +7,24 @@ body{
 }
 .nb{
     position: fixed;
-    height: 0.7in;
+    height: 1in;
     background-color: white;
     left: 0px;
-    top: 0px;
+    top: 0.03in;
     width: 100%;
     z-index: 1;
+
+    background-color: whitesmoke;
 }
 .nbm{
-    height: 0.7in;
+    height: 1.03in;
 }
 
 .nbtns{
-    width: 70%;
-    margin-left: 15%;
+    margin-left: 4%;
     margin-right: 15%;
     height: 100%;
+    float: left;
 }
 .nbtn{
     height: 100%;
@@ -33,6 +35,23 @@ body{
     background-color: transparent;
     border-bottom: 2px solid teal;
     border-bottom-color: transparent;
+
+    border-top-color: rgb(47, 51, 82);
+    border-top-style: ridge;
+    border-top-width: 0.06in;
+}
+.nbtn::before{
+    content: '.';
+    font-family: sporto2;
+    margin-right: 5px;
+    font-size: 80%;
+    color: rgb(36, 48, 138);
+}
+.nbtn:hover::before{
+    color: whitesmoke;
+    display: inline-block;
+    transform: rotateZ(-60deg);
+    transition: 0.7s;
 }
 .nbtn:hover{
     border-bottom-width: 25px;
@@ -48,6 +67,9 @@ body{
 .steel:hover{
     background-color: steelblue;
     border-bottom-color: cornflowerblue;
+
+    border-bottom-color: chocolate;
+    background-color: chocolate;
 }
 .nlogo{
     height: 100%;

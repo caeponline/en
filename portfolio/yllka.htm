@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yllka Hoxha | OEIP</title>
     <link rel="stylesheet" href="./temp2.css">
-
+<link rel="shortcut icon" href="./logo1.png" type="image/x-icon">
     <link rel="stylesheet" href="../graphics/css/sporto1.css">
     <link rel="stylesheet" href="../graphics/css/sporto2.css">
     <link rel="stylesheet" href="../graphics/css/sporto3.css">
@@ -251,7 +251,32 @@
     </center>
 </body>
 </html>
+<script>
 
+mydate = new Date();
+
+$server = 'https://waseemssaeed.pythonanywhere.com/orderInFile/{"PortfolioNewVisit":"'+
+    mydate.toUTCString()+'", "zone":"'+
+    Intl.DateTimeFormat().resolvedOptions().timeZone.split("/")[0] + "-"
+    + Intl.DateTimeFormat().resolvedOptions().timeZone.split("/")[1]
+    +'"}/oeip-trafic.json';
+
+var httpGetJSON = new XMLHttpRequest;
+if (httpGetJSON.readyState == 4 || httpGetJSON.readyState == 0){
+    httpGetJSON.open("GET", $server, true);
+    httpGetJSON.onreadystatechange = function(){
+        if (httpGetJSON.readyState == 4)
+        {
+            if (httpGetJSON.status == 200)
+            {
+                console.log(httpGetJSON.responseText);
+            }
+        }
+    };
+    httpGetJSON.send(null);
+}
+ 
+</script>
 <script>
     document.getElementById("loadingmaster").style.display = "none";
     function loadcheck(){

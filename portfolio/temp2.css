@@ -1,0 +1,186 @@
+body{
+    margin: 0px;
+    background-color: whitesmoke;
+}
+*{
+    font-family: tajawal;
+    font-size: 18px;
+}
+.tophead{
+    width: 100%;
+    min-height: 0.3in;
+    background-color: rgba(47, 51, 82, 0.963);
+
+    min-height: 1.2in; max-height: max-content; height: unset;
+}
+.tophead .h1{
+    color: whitesmoke; font-size: 30px; vertical-align: middle; margin-left: 30px; height: 1in; line-height: 1in; float: left;
+}
+@media screen and (max-width: 600px){
+    .tophead{
+        min-height: 2in;
+    }
+}
+@media screen and (max-width: 400px){
+    .tophead{
+        min-height: 2in;
+    }
+    .tophead .h1{
+        line-height: unset;
+        margin-top: 0.3in;
+    }
+}
+@media screen and (max-width: 350px){
+    .tophead{
+        min-height: 2.5in;
+    }
+    .tophead .h1{
+        line-height: unset;
+        margin-top: 0.3in;
+    }
+}
+
+.secondhead{
+    padding: 10px;
+    background-color: crimson;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.h1{
+    color: whitesmoke; font-size: 40px;
+    margin-left: 30px;
+    display: block;
+}
+.h2{
+    color: rgba(47, 51, 82, 0.963);
+    font-size: 30px;
+    vertical-align: middle;
+}
+
+textarea{
+    width: 80%;
+    height: 1in;
+    resize: vertical;
+    border: none;
+    background-color: rgba(70, 131, 180, 0.11);
+    border-bottom: 2px solid steelblue;
+
+    padding: 5px;
+}
+@media screen and (max-width: 1000px){
+    textarea{
+        width: calc(100% - 10px);
+        height: 2in;
+    }
+}
+
+#loadingmaster{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0px;
+    left: 0px;
+    background-color: rgba(0, 128, 128, 0.568);
+}
+#loading{
+    width: 4in;
+    height: 3in;
+    margin-top: calc(50vh - 1.5in);
+    margin-left: calc(50% - 2in);
+    background-color: rgba(47, 51, 82, 0.963);
+    color: white;
+    text-align: center;
+    border-radius: 50px;
+    display: grid;
+    grid-template-rows: 1fr 2fr 1fr;
+}
+#loading h1{
+    line-height: 400%;
+}
+#loading #lAction{
+    animation: anmo 0.5s infinite alternate;
+    animation-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    font-size: 100px;
+    transform-origin: 50% 50%;
+    margin-top: 0.5in;
+
+    background: linear-gradient(white, rgba(255, 166, 0, 0.527), rgba(255, 166, 0, 0.527));
+    color: transparent;
+    background-clip: text;
+}
+@keyframes anmo {
+    100%{
+        display: block;
+        transform: rotateZ(90deg);
+    }
+    0%{
+        display: block;
+        transform: rotateZ(-90deg);
+    }
+}
+
+
+.section{
+    background-color: rgba(47, 51, 82, 0.963);
+    color: whitesmoke;
+    font-size: 30px;
+    width: 80%;
+    padding: 5px;
+    margin: 5px;
+}
+.furtherinfo{
+    padding: 10px;
+}
+.section-content{
+    width: calc(80% - 60px);
+    padding: 10px;
+    display: block;
+    padding-left: 50px;
+}
+@media screen and (max-width: 500px) {
+    .section{
+        width: calc(100% - 20px);
+        padding: 5px;
+        margin: 5px;
+    }
+    .section-content{
+        width: calc(100% - 20px);
+        padding: 10px;
+    }
+}
+/* to share */
+
+.btn{
+    outline: none;
+    border: none;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: rgba(47, 51, 82, 0.963);
+    color: whitesmoke;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: palevioletred;
+}
+.smallbtn{
+    font-size: 16px;
+    height: 0.25in;
+    padding-top: 0px; padding-bottom: 0px;
+    font-weight: bold;
+}
+.mail{
+    font-family: lecafetech2;
+    color: rgba(47, 51, 82, 0.963);
+    font-size: 120%;
+}
+
+.point{
+    display: block;
+}
+.point::before{
+    content: 'y';
+    font-family: sporto1;
+    font-size: 60%;
+    margin-right: 5px;
+    color: rgba(47, 51, 82, 0.963);
+}

@@ -20,6 +20,9 @@ body{
     .tophead{
         min-height: 2in;
     }
+    #infox{
+        padding: 10px;
+    }
 }
 @media screen and (max-width: 400px){
     .tophead{
@@ -29,6 +32,9 @@ body{
         line-height: unset;
         margin-top: 0.3in;
     }
+    #infox{
+        padding: 10px;
+    }
 }
 @media screen and (max-width: 350px){
     .tophead{
@@ -37,6 +43,9 @@ body{
     .tophead .h1{
         line-height: unset;
         margin-top: 0.3in;
+    }
+    #infox{
+        padding: 10px;
     }
 }
 

@@ -1,0 +1,1365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .btn{
+            font-size: 20px;
+        }
+    </style>
+    <style>
+        .templates{
+            display: none;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./cards.css">
+    <title>Start Here - Open Expertise Improvement Platform</title>
+    <link rel="stylesheet" href="./temp1.css">
+    <link rel="shortcut icon" href="./logo1.png" type="image/x-icon">
+    <link rel="stylesheet" href="../graphics/css/sporto1.css">
+    <link rel="stylesheet" href="../graphics/css/sporto2.css">
+    <link rel="stylesheet" href="../graphics/css/sporto3.css">
+    <link rel="stylesheet" href="../graphics/css/sporto4.css">
+    <link rel="stylesheet" href="../graphics/css/sporto5.css">
+    <link rel="stylesheet" href="../graphics/css/sporto6.css">
+    <link rel="stylesheet" href="../graphics/css/cov.css">
+    <link rel="stylesheet" href="../graphics/css/leCafeTech2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500&display=swap" rel="stylesheet"> 
+
+    <meta property="og:site_name" content="Your Profile | Open Expertise Improvement Platform" />
+    <meta property="og:image:type" content="image/png"> 
+    <meta property="og:image:width" content="1024">
+    <meta property="og:image:height" content="1024">
+    <meta name="twitter:title" content="Your Profile | Open Expertise Improvement Platform" />
+
+    <meta property='og:title' content='Your Profile | Open Expertise Improvement Platform'/>
+    <meta property='og:image'/>
+    <meta property='og:description' content='Your Profile'/>
+    <meta property='og:url' content='https://oeip.github.io/en/portfolio/user.htm'/>
+    <style>
+        .textbox-small{
+            height: 0.1in;
+            padding: 5px;
+            width: 70%;
+            margin-top: 5px;
+            margin-left: 5%;
+        }
+        .gr-up, .gr-down{
+            background-color: transparent;
+            margin: 0px;
+            outline: none;
+            border: none;
+            color: inherit;
+            line-height: 14px;
+            vertical-align: top;
+            padding: 4px;
+            border-left: 1px solid whitesmoke;
+        }
+        .gr-up::before{
+            content: 'x';
+            font-family: sporto1;
+            font-size: 85%;
+        }
+        .gr-down::before{
+            content: 'u';
+            font-family: sporto1;
+            font-size: 85%;
+        }
+        .xprice{
+            font-size: 16px;
+        }
+    </style>
+        <style>
+            #usernav{
+                display: none;
+                top: 0px;
+                right: 0px;
+                z-index: 1;
+                width: unset;
+                background-color: transparent;
+                color: rgb(47, 51, 82);
+                height: 0.5in;
+                padding: 10px;
+                padding-top: 20px;
+            }
+            #usernav .img-div{
+                width: 0.5in;
+                height: 0.5in;
+                overflow: hidden;
+                border-radius: 50%;
+            }
+            #usernav .img-div img{
+                width: 100%;
+            }
+            #usernav .img-div, .user-name{
+                display: inline-block;
+                vertical-align: middle;
+            }
+            #usernav .user-name{
+                font-size: 20px;
+                padding-left: 10px;
+                font-weight: bold;
+            }
+            #usernav .user-name a{
+                cursor: pointer;
+                border-bottom: 1px dashed currentColor;
+                color: whitesmoke;
+
+            }
+            #usernav .logout, #usernav .notifs, #usernav .profile, #usernav .menu, .menu{
+                background-color: transparent;
+                position: relative;
+                border: none;
+                outline: none;
+                font-size: 18px;
+                line-height: 0.35in;
+                color: inherit;
+    
+                background-color: rgb(47, 51, 82);
+                color: whitesmoke;
+                height: 0.4in; width: 0.4in;
+                border-radius: 10px;
+                cursor: pointer;
+            }
+            #usernav .notifs::before{
+                content: 'c';
+                font-family: sporto1;
+                color: inherit;
+            }
+            #usernav .notifs::after{
+                content: '1';
+                font-size: 14px;
+                line-height: 0.2in;
+                position: absolute;
+                left: 0px;
+                margin-top: -5px;
+                margin-left: -5px;
+                width: 0.2in; height: 0.2in;
+                background-color: crimson;
+                border-radius: 50%;
+            }
+            #usernav .logout::before{
+                content: 'm';
+                font-family: sporto4;
+                color: inherit;
+            }
+            #usernav .profile::before{
+                content: 'n';
+                font-family: sporto1;
+                color: inherit;
+            }
+            #usernav .menu::before, .menu::before{
+                content: 'S';
+                font-family: sporto1;
+                color: inherit;
+            }
+            /*#headingo, #sc1, #navbar, #nbm{
+                display: none;
+            }*/
+            @media screen and (max-width: 600px) {
+                body{
+                    padding-top: 0.7in;
+                }
+                #usernav{
+                    width: calc(100% - 20px);
+                    background-color: rgb(47, 51, 82);
+                    background-color: rgb(64, 64, 64);
+                    color: whitesmoke;
+                    padding-top: 10px;
+                    position: fixed;
+                    left: 0px;
+                    top: 0px;
+                }
+                #usernav .logout, #usernav .notifs, #usernav .profile{
+                    width: 0.4in;
+                    height: 0.4in;
+    
+                }
+                #usernav .user-name{
+                    font-size: 17px;
+                    line-height: 0.5in;
+                    vertical-align: middle;
+                }
+            }
+            @media screen and (max-width: 330px) {
+                #usernav .logout, #usernav .notifs, #usernav .profile{
+                    width: 0.3in;
+                    height: 0.3in;
+                }
+                #usernav .user-name{
+                    font-size: 14px;
+                    line-height: 0.5in;
+                    vertical-align: middle;
+                }
+            }
+        </style>
+    <style>
+        .edit::after{
+            content: 'y';
+            font-family: sporto4;
+            color: rgb(47, 51, 82);
+            font-size: 80%;
+            cursor: pointer;
+            margin-left: 5px;
+            margin-right: 5px;
+        }
+        .disabled, .disabled0, .disabled1, .disabled2{
+            pointer-events: none;
+            background-color: rgb(64, 64, 64);
+        }
+    </style>
+    <style>
+        .section{
+            width: calc(100% - 20px);
+            background-color: rgb(64, 64, 64);
+            background-color: slateblue;
+            font-size: 20px;
+        }
+        .section-content{
+            width: calc(95% - 60px);
+        }
+        .programTitle{
+            display: block;
+            font-size: 30px;
+            background-color: whitesmoke;
+            color: rgb(47, 51, 82);
+            padding: 5px;
+            font-weight: bold;
+            width: calc(100% - 10px);
+            margin-bottom: 10px;
+        }
+        #programInfo{
+            display: block;
+            font-size: 16px;
+            width: 100%;
+            margin-top: 5px;
+            margin-bottom: 10px;
+        }
+        .loading-type0{
+            position: relative;
+            height: 1in;
+            display: block;
+        }
+        .loading-type0 span{
+            position: absolute;
+            display: block;
+            width: 0.4in;
+            height: 0.4in;
+            left: 40%;
+            border-radius: 10px;
+            background-color: rgb(47, 51, 82);
+            animation: anmloading 5s alternate infinite;
+            border: none;
+            outline: none;
+        }
+        @keyframes anmloading {
+            100%{
+                border-top-right-radius: 0px;
+                border-top-right-radius: 30px;
+                border-bottom-right-radius: 0px;
+                border-bottom-left-radius: 30px;
+                transform: rotateZ(20deg);
+            }
+            90%{
+                border-top-right-radius: 30px;
+                border-top-right-radius: 30px;
+                border-bottom-right-radius: 0px;
+                border-bottom-left-radius: 0px;
+                transform: rotateZ(40deg);
+            }
+            80%{
+                border-top-right-radius: 0px;
+                border-top-right-radius: 30px;
+                border-bottom-right-radius: 30px;
+                border-bottom-left-radius: 0px;
+                transform: rotateZ(60deg);
+                background-color: crimson;
+            }
+            70%{
+                border-top-right-radius: 0px;
+                border-top-right-radius: 0px;
+                border-bottom-right-radius: 30px;
+                border-bottom-left-radius: 30px;
+                transform: rotateZ(10deg);
+            }
+            60%{
+                border-top-right-radius: 30px;
+                border-top-right-radius: 0px;
+                border-bottom-right-radius: 0px;
+                border-bottom-left-radius: 30px;
+                transform: rotateZ(00deg);
+            }
+            50%{
+                border-top-right-radius: 30px;
+                border-top-right-radius: 30px;
+                border-bottom-right-radius: 0px;
+                border-bottom-left-radius: 0px;
+                transform: rotateZ(-20deg);
+            }
+            40%{
+                border-top-right-radius: 0px;
+                border-top-right-radius: 30px;
+                border-bottom-right-radius: 30px;
+                border-bottom-left-radius: 0px;
+                transform: rotateZ(-30deg);
+                background-color: slateblue;
+            }
+            30%{
+                border-top-right-radius: 0px;
+                border-top-right-radius: 0px;
+                border-bottom-right-radius: 30px;
+                border-bottom-left-radius: 30px;
+                transform: rotateZ(-50deg);
+            }
+            20%{
+                border-top-right-radius: 30px;
+                border-top-right-radius: 0px;
+                border-bottom-right-radius: 0px;
+                border-bottom-left-radius: 30px;
+                transform: rotateZ(-60deg);
+            }
+            10%{
+                border-top-right-radius: 30px;
+                border-top-right-radius: 30px;
+                border-bottom-right-radius: 0px;
+                border-bottom-left-radius: 0px;
+                transform: rotateZ(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="editHolder" style="z-index: 9999999999;">
+        <div class="screen-bg-fog" style="z-index: 9999999999;">
+            <div id="template-editInnerHTML" style="z-index: 9999999999;">
+                <h2>Edit <span id="editFlag"></span></h2>
+                <input type="text" id="editNewValue" placeholder="New Value..." style="margin: 0px; width: 100%;" class="textarea textbox">
+                <div style="float: right; margin-right: 10%; margin-top: 10px;">
+                    <button class="btn" id="editSave" targetElement="">Edit</button>
+                    <button class="btn" onclick="display(document.getElementById('editHolder'))">Discard</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="promptHolder" style="z-index: 9999999999;">
+        <div class="screen-bg-fog" style="z-index: 9999999999;">
+            <div id="template-prompt" style="z-index: 9999999999;">
+                <h2><span id="promptFlag"></span></h2>
+                <input type="text" id="promptValue" placeholder="New Value..." style="margin: 0px; width: 100%;" class="textarea textbox">
+                <div style="float: right; margin-right: 10%; margin-top: 10px;">
+                    <button class="btn" id="promptSubmit" onclick="promptSubmit()" targetElement="">Go</button>
+                    <button class="btn" onclick="display(document.getElementById('promptHolder'))">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <style>
+        .select{
+            width: calc(100% - 10px);
+            font-size: 20px;
+            padding: 5px;
+            border: none;
+            color: rgb(47, 51, 82);
+        }
+        .selectlabel{
+            font-size: 18px;
+            margin: 5px;
+        }
+    </style>
+    <div id="effortOptionsHolder" style="z-index: 9999999999; display: none;">
+        <div class="screen-bg-fog" style="z-index: 9999999999;">
+            <div id="template-effortOptions" style="z-index: 9999999999;">
+                <h2><span id="effortOptionsFlag">Add Effort to Course:</span></h2>
+                <label for="" class="selectlabel">Program</label>
+                <select name="" onchange="effortOptions_loadCoursesToList()" id="" class="select">
+                    <option value="_programID_here_">General Program</option>
+                    <option value="_programID_here_">Quantum Computing</option>
+                </select>
+                <br><br>
+                <label for="" class="selectlabel">Course</label>
+                <select name="" id="" class="select">
+                    <option value="_programID_here_">Vibrations and Waves</option>
+                    <option value="_programID_here_">Basic Mathematics</option>
+                    <option value="_programID_here_">Physics I</option>
+                    <option value="_programID_here_">Physics II</option>
+                </select>
+                <div style="float: right; margin-right: 10%; margin-top: 10px;">
+                    <button class="btn" id="effortOptionsSubmit" onclick="effortOptionsSubmit()" targetElement="">Go</button>
+                    <button class="btn" onclick="display(document.getElementById('effortOptionsHolder'))">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="tophead" style="background-color: rgb(64, 64, 64);">
+        <!--
+            <img src="./logo2.png" style="height: 1in; margin-top: 0.1in; margin-left: 0.1in; float: left;" alt="">
+        -->
+        <img src="../logo2.png" style="height: 1in; margin-left: 0.1in; margin-top: 0.1in; float: left;" alt="">
+        <span class="h1" style="font-weight: bold;">
+            Your Experience Dashboard
+        </span>
+
+        <div id="usernav" style="float: right; margin-right: 20px;">
+        </div>
+    </div>
+    <!--<div class="secondhead">
+        <input type="text" placehoprogramsr="Email/RegisterID...">
+        <input type="text" placeholder="password...">
+        <button>Login</button>
+    </div>-->
+    <div class="flex100pc" style="flex-direction: row;">
+        <div class="fch-3in" style="min-height: 100vh; height: fit-content; background-color: gainsboro; color: whitesmoke; margin-top: 10px;">
+            <div style="background-color: rgb(64, 64, 64); padding-top: 10px; padding-bottom: 10px;">
+                <img src="" id="user-pic" style="width: 50%; margin-left: 25%;" alt="">
+                <div class="list-headline" style="background-color: transparent; width: 100%; text-align: center; margin-top: 0px;" id="user-name">
+                </div>
+            </div>
+            <div class="list" id="navlist">
+                <div style="display: none;">
+                    <button onclick="addNewEffort()" class="btn disabled0" style="text-align: left; width: 100%; font-size: 20px;">
+                        <span style="font-family: sporto6; font-size: 82%;"><!--e-->p</span>
+                        <span class="startCourseHeadline">Select Course to Add Topics</span>
+                    </button>
+                    <button onclick="addNewEffort()" class="btn disabled0" style="text-align: left; width: 100%; font-size: 20px;">
+                        <span style="font-family: sporto2; font-size: 82%;">k</span>
+                        Manage Your Programs
+                    </button>
+                </div>
+                <div class="list-headline" style="background-color: transparent; color: rgb(47, 51, 82);">
+                    Your Programs
+                </div>
+                <div id="programslist" style="color: rgb(47, 51, 82);">
+                    <center>
+                        <span class="loading-type0"><span></span> <br><br><br> Loading...</span>
+                    </center>
+                </div>
+                <button onclick="addNewProgram()" class="btn disabled2" style="text-align: left; width: calc(100% - 20px); font-size: 20px;">
+                    <span style="font-family: sporto2; font-size: 82%;">k</span>
+                    Add New Program
+                </button>
+            </div>
+        </div>
+        <!--RIGHTHAND BODY-->
+        <div class="fch-1">
+            <div id="efforts" style="display: flex; flex-wrap: wrap;">
+            </div>
+
+            <h2>Topics you may be interested in</h2>
+            <div id="topics" style="display: flex; flex-wrap: wrap;">
+            </div>
+
+            <h2>Upcoming Events</h2>
+            <div id="events" style="display: flex; flex-wrap: wrap;">
+            </div>
+        </div>
+    </div>
+
+    <!--footer-->
+    <div class="halfScreen" style="background-color: rgb(47, 51, 82); color: whitesmoke; padding: 10px; width: calc(100% - 20px); margin-top: 1in;">
+        <div style="display: flex; width: 100%; flex-wrap: wrap; font-size: 16px;">
+            <div style="flex-basis: 320px; padding: 5px;">
+                <h2>Contact</h2>
+                <span>
+                    <strong>
+                        To empower our policy, we encourage all contacts, appeals also are so welcomed
+                    </strong>
+                        <br> <br>
+                    Waseem Sa'eed <br>
+                    w.waseemsalem@gmail.com <br>
+                    Founder, International Coordinator,
+                    Interim Centre Manager.
+                </span>
+            </div>
+            <div style="flex-basis: 320px; padding: 5px;">
+                <h2>Policy</h2>
+                <img src="../779708--.png" style="width: 2in;" alt="">
+                <span style="display: block; font-size: 80%; color: rgba(216, 219, 238, 0.87);">
+                    (United Kingdom based accreditation Company)
+                </span>
+                <br> <span style="font-family: sporto1;">$</span> &nbsp; Appeals Policy and Procedure
+                <br> <span style="font-family: sporto1;">$</span> &nbsp; Assessment and Quality Assurance – [AQA]
+                <br> <span style="font-family: sporto1;">$</span> &nbsp; Centre Management Policy – [CMP]
+                <br> <span style="font-family: sporto1;">$</span> &nbsp; Complaint Policy – [CP]
+                <br> <span style="font-family: sporto1;">$</span> &nbsp; Cookies policy
+                <br> <span style="font-family: sporto1;">$</span> &nbsp; course review process
+                <br> <span style="font-family: sporto1;">$</span> &nbsp; Data Protection Policy
+                <br> <span style="font-family: sporto1;">$</span> &nbsp; Equal Opportunity Charter – [EO]
+                <br> <span style="font-family: sporto1;">$</span> &nbsp; Health and Safety Policy - [HSP]
+                <br> <span style="font-family: sporto1;">$</span> &nbsp; Malpractice Policy – [MP]
+                <br> <span style="font-family: sporto1;">$</span> &nbsp; Privacy Policy
+                <br> <span style="font-family: sporto1;">$</span> &nbsp; Reasonable Adjustments Special Consideration Policy
+                <br> <span style="font-family: sporto1;">$</span> &nbsp; Safeguarding Learner Policy – [SLP]
+            </div>
+            <div style="flex-basis: 320px; padding: 5px;">
+                <h2>Links</h2>
+            </div>
+            <div style="flex-basis: 320px; padding: 5px;">
+                <h2>Open Voluntary Seats</h2>
+                <span style="display: block;">Quality Nominee (unlimited)</span>
+                <span style="display: block;">Centre Manager ( 1 )</span>
+                <span style="display: block;">Internal Quality Assurer IQA ( 2 )</span>
+                <span style="display: block;">Centre Administrator ( 1 )</span>
+                <span style="display: block;">Support Officer ( 1 )</span>
+
+                <style>
+                    .btnx{
+                        outline: none;
+                        border: none;
+                        cursor: pointer;
+                        font-size: 16px;
+                        margin: 10px;
+                        background-color: whitesmoke;
+                        color: rgba(47, 51, 82, 0.87);
+                        font-weight: bold;
+                        box-shadow: none;
+                    }
+                </style>
+                <center>
+                    <button class="btnx"><span style="font-family: sporto1; font-size: 90%;">$</span> &nbsp; Click to Apply</button>
+                </center>
+            </div>
+        </div>
+    </div>
+
+    <center>
+        <div style="font-size: 16px; padding: 10px; padding-bottom: 40px; padding-top: 20px; background-color: rgb(47, 51, 82); border-top: 1px dashed whitesmoke; color: whitesmoke;">
+            Copyright &copy; <br>
+            All rights reserved ( 2021 - 2022 )
+        </div>
+    </center>
+
+    <!--screen in screen-->
+    <!--<center>
+        <div style="display: block; background-color: rgba(47, 51, 82, 0.47); position: fixed; width: 100vw; height: 100vh; left: 0px; top: 0px;">
+            <button onclick="display(this.parentElement)">close</button>
+            <br>
+            <iframe src="./jessica-silva.htm" style="width: 80%; height: 80%;" frameborder="0"></iframe>
+        </div>
+    </center>-->
+</body>
+</html>
+
+<script src="./jslib.js"></script>
+<script>
+    
+    nPrograms = 0
+    programs = []
+    function loadPrograms(){
+        window.scrollTo(0,0)
+        _$("programslist").innerHTML = '<center><span class="loading-type0"><span></span></span></center>'
+        this.nPrograms = 0
+        $registerid = getRequestParameters.register
+        httpgo("https://waseemssaeed.pythonanywhere.com","/getprograms/"+$registerid, (result, error)=>{
+            if(!error.occure){
+                _$("programslist").innerHTML = ""
+                programs = JSON.parse(result.replaceAll("$slash$", "/").replaceAll("$qm$", "?"))
+                for (const programID in programs) {
+                    if (Object.hasOwnProperty.call(programs, programID)) {
+                        const prog = programs[programID];
+                        programListElement = document.createElement("div")
+                        programListElement.classList = "list-item"
+                        programListElement.innerHTML = prog.programName + loadtemplate("programEditName", {"programID": programID})
+                        programListElement.setAttribute("HTML_programID", programID)
+                        programListElement.id = "programlistelement-"+programID
+                        programListElement.addEventListener("click", ()=>{
+                            loadProgramOfID(event)
+                        }, false)
+                        _$("programslist").appendChild(programListElement)
+                        this.nPrograms += 1
+                    }
+                }
+                enable("disabled2")
+            } else {
+                _$("programslist").innerHTML = '\
+                    <center> \
+                        <span style="font-weight: bold">Network Issue or Register Not Found</span> <br>\
+                        <button class="btn" onclick="loadPrograms()">Try Again</button>\
+                    </center>\
+                '
+                return
+            }
+        })
+    }
+    getRequestParametersRaw = document.URL.split("?")[1]
+    getRequestParameters = {}
+    i = 0
+    getRequestParametersRaw.split("&").forEach(parameter => {
+        getRequestParameters[parameter.split("=")[0]] = parameter.split("=")[1]
+        console.log(parameter.split("=")[0] + " == " + parameter.split("=")[1])
+        i+=1
+        if(i == getRequestParametersRaw.split("&").length){
+            loadPrograms()
+        }
+    })
+</script>
+<script>
+        document.getElementById("promptHolder").style.display = "none"
+    refreshEditEvents()
+    function refreshEditEvents(){
+        _$("editHolder").style.display = "none"
+        function editHTML(targetElem){
+            _$("editHolder").style.display = "block"
+            _$("editSave").setAttribute("targetElement", targetElem.id)
+            _$("editFlag").innerHTML = targetElem.getAttribute("flag")
+            _$("editNewValue").value = targetElem.innerHTML
+        }
+        _$("editSave").addEventListener("click", ()=>{
+            targetElement = _$("editSave").getAttribute("targetElement")
+            _$(targetElement).innerHTML = _v$("editNewValue")
+            document.getElementById("editHolder").style.display = "none"
+        }, false)
+        editElems = document.getElementsByClassName("edit")
+        for (let index = 0; index < editElems.length; index++) {
+            const element = editElems[index];
+            element.addEventListener("click", ()=>{
+                editHTML(element)
+            }, false)
+        }
+    }
+</script>
+<script>
+    secs = document.getElementsByClassName("section");
+    for (let index = 0; index < secs.length; index++) {
+        const element = secs[index];
+        element.addEventListener("click", ()=>{
+            document.getElementById(element.getAttribute("targetSection")).style.display = 
+                document.getElementById(element.getAttribute("targetSection")).style.display == "none" ? "block" : "none";
+            
+            document.getElementById(element.getAttribute("targetSection") + "-icon").innerHTML = 
+                document.getElementById(element.getAttribute("targetSection")).style.display == "block" ? "l" : "n";
+        }, false);
+    }
+
+    function display(el){
+        el.style.display = el.style.display == "block" ? "none" : "block";
+    }
+
+    global_askAnswer = "none"
+    global_afterAnswerCall = () => {}
+    function askUser(question){
+        display(document.getElementById("promptHolder"))
+        _$("promptFlag").innerHTML = question
+    }
+    function promptSubmit(){
+        display(document.getElementById("promptHolder"))
+        global_askAnswer = _$("promptValue").value
+        global_afterAnswerCall()
+    }
+
+    function registerEffort(courseID){
+        _$("courseRegisterResult"+courseID).innerHTML = "loading..."
+        
+        $doc_resources = _v$("resources"+courseID)
+        $doc_resources_discussion = _v$("resources_discussion"+courseID)
+        $doc_thesis = _v$("thesis"+courseID)
+        $progress = _i$("progress"+courseID)
+        $deadline = _i$("deadline"+courseID)
+        $title = _i$("title"+courseID)
+        $supervisor = _i$("supervisor"+courseID)
+        $effortID = _$("effortcard"+courseID).getAttribute("effortID")
+        $programID = _$("effortcard"+courseID).getAttribute("programID")
+        $courseID = _$("effortcard"+courseID).getAttribute("courseID")
+        $additionalLinks = ()=>{
+            additionalLinksElements = document.getElementsByClassName("additionalLink"+courseID)
+            addarr = []
+            for (let index = 0; index < additionalLinksElements.length; index++) {
+                const element = additionalLinksElements[index];
+                addarr.push(element.value)
+                if(index == additionalLinksElements.length - 1){
+                    return addarr
+                }
+            }
+        }
+
+        totalCourseRegister = {}
+        totalCourseRegister[$effortID] = {
+                                    "progress": $progress,
+                                    "deadline": $deadline,
+                                    "title": $title,
+                                    "supervisor": $supervisor,
+                                    "files": {
+                                        "resources": $doc_resources,
+                                        "resourses_discussion": $doc_resources_discussion,
+                                        "thesis": $doc_thesis,
+                                        "additional": $additionalLinks()
+                                    }
+                                }
+        $useremail = getRequestParameters.register
+        console.log($useremail + " : " + JSON.stringify(totalCourseRegister))
+        console.log("https://waseemssaeed.pythonanywhere.com/registereffort/"+$useremail+"/"+$effortID+"/"+JSON.stringify(totalCourseRegister).replaceAll("/","$slash$").replaceAll("?","$qm$"))
+        httpgo("https://waseemssaeed.pythonanywhere.com","/registereffort/"+$useremail+"/"+$effortID+"/"+JSON.stringify(totalCourseRegister).replaceAll("/","$slash$").replaceAll("?","$qm$")+"/"+$programID+"/"+$courseID, (result, error)=>{
+            if(!error.occure){
+                _$("courseRegisterResult"+courseID).innerHTML = result
+                location.reload()
+            } else {
+                _$("courseRegisterResult"+courseID).innerHTML = "Network error"
+            }
+        });
+    }
+
+    nEfforts = 0
+    global_efforts = []
+    function loadEfforts(){
+        i = 0
+        nEfforts = 0
+        $userid = getRequestParameters.register
+        httpgo("https://waseemssaeed.pythonanywhere.com","/getefforts/"+$userid, (result, error)=>{
+            global_efforts = JSON.parse(result.replaceAll("$slash$", "/").replaceAll("$qm$", "?"))
+            if(!error.occure){
+                /*for (const key in global_efforts) {
+                    if (Object.hasOwnProperty.call(global_efforts, key)) {
+                        const effort = global_efforts[key];
+                        _$("efforts").innerHTML += '\
+                            <div class="card" effortID="'+key+'" id="effortcard'+i+'">\
+                                <img src="../logoo.png" alt="">\
+                                <div class="card-body">\
+                                    <span class="card-headline" id="headline'+i+'">\
+                                        '+effort.title+'\
+                                    </span>\
+                                    <div class="price xprice" style="background-color: chocolate;">\
+                                        <strong>Progress: <span id="progress'+i+'">'+effort.progress+'</span>%</strong>\
+                                        <button class="minibtn gr-up" onclick="moreProgress('+i+')">&nbsp; More</button>\
+                                        <button class="minibtn gr-down" onclick="lessProgress('+i+')">&nbsp; Less</button>\
+                                    </div>\
+                                    <div class="price xprice" style="background-color: chocolate;">\
+                                        <strong>left: <span id="deadline'+i+'">'+effort.deadline+'</span> Weeks</strong>\
+                                        <button class="minibtn gr-up">&nbsp; More</button>\
+                                        <button class="minibtn gr-down">&nbsp; Less</button>\
+                                    </div>\
+                                    <div class="card-content">\
+                                        <strong>Experience title:</strong> <span class="edit" flag="Experience Title" id="title'+i+'">'+effort.title+'</span> <br>\
+                                        <strong>supervisor:</strong><span class="edit" flag="Supervisor" id="supervisor'+i+'">'+effort.supervisor+'</span> <br>\
+                                        <strong>Files:</strong> <br>\
+                                        <span class="point tabed">\
+                                            List of resources (Drive with comments) <br>\
+                                            <input type="text" id="resources'+i+'" value="'+effort.files.resources+'" class="textbox-small" placeholder="Google Docs link...">\
+                                        </span>\
+                                        <span class="point tabed">\
+                                            Review of resources (Drive with comments) <br>\
+                                            <input type="text" id="resources_discussion'+i+'" value="'+effort.files.resourses_discussion+'" class="textbox-small" placeholder="Google Docs link...">\
+                                        </span>\
+                                        <span class="point tabed">\
+                                            Thesis (Drive with comments) <br>\
+                                            <input type="text" id="thesis'+i+'" value="'+effort.files.thesis+'" class="textbox-small" placeholder="Google Docs link...">\
+                                        </span>\
+                                        <span class="point tabed">\
+                                            Additional Links <br>\
+                                            <div id="adds'+i+'"></div>\
+                                            <div style="width: 70%; text-align: right; padding-right: 10%; margin-top: 10px;">\
+                                                <button class="btn minibtn" onclick="newAdditionalEffor('+i+')" style="background-color: chocolate;">+ Add More Additional Links</button>\
+                                            </div>\
+                                        </span>\
+                                    </div>\
+                                    <div class="card-action">\
+                                        <button style="background-color: rgb(47, 51, 82);" onclick="registerEffort(\''+i+'\')" class="btn">Save Edits</button>\
+                                        <button style="background-color: rgb(47, 51, 82);" class="btn">Submit</button>\
+                                        <button style="background-color: rgb(47, 51, 82);" class="btn">Share Prgress</button>\
+                                        <span id="courseRegisterResult'+i+'"></span>\
+                                    </div>\
+                                </div>\
+                            </div>\
+                            '
+                            refreshEditEvents()
+                            effels = ""
+                            effort.files.additional.forEach(additionalEffort => {
+                                effels += '<input type="text" class="textbox-small additionalLink'+i+'" value="'+additionalEffort+'" placeholder="Link to effort..."> <br>'
+                            })
+                            _$("adds"+i).innerHTML = effels
+                            i += 1
+                            nEfforts += 1
+                    }
+                }*/
+                /*efforts.forEach(effort => {
+                    _$("efforts").innerHTML += '\
+                    <div class="card">\
+                        <img src="../logoo.png" alt="">\
+                        <div class="card-body">\
+                            <span class="card-headline">\
+                                '+effort.title+'\
+                            </span>\
+                            <div class="price xprice" style="background-color: chocolate;">\
+                                <strong>Progress: <span id="progress'+i+'">'+effort.progress+'</span>%</strong>\
+                                <button class="minibtn gr-up" onclick="moreProgress('+i+')">&nbsp; More</button>\
+                                <button class="minibtn gr-down" onclick="lessProgress('+i+')">&nbsp; Less</button>\
+                            </div>\
+                            <div class="price xprice" style="background-color: chocolate;">\
+                                <strong>left: <span id="deadline'+i+'">'+effort.deadline+'</span> Weeks</strong>\
+                                <button class="minibtn gr-up">&nbsp; More</button>\
+                                <button class="minibtn gr-down">&nbsp; Less</button>\
+                            </div>\
+                            <div class="card-content">\
+                                <strong>Experience title:</strong> <span class="edit" flag="Experience Title" id="title'+i+'">'+effort.title+'</span> <br>\
+                                <strong>supervisor:</strong><span class="edit" flag="Supervisor" id="supervisor'+i+'">'+effort.supervisor+'</span> <br>\
+                                <strong>Files:</strong> <br>\
+                                <span class="point tabed">\
+                                    List of resources (Drive with comments) <br>\
+                                    <input type="text" id="resources'+i+'" value="'+effort.files.resources+'" class="textbox-small" placeholder="Google Docs link...">\
+                                </span>\
+                                <span class="point tabed">\
+                                    Review of resources (Drive with comments) <br>\
+                                    <input type="text" id="resources_discussion'+i+'" value="'+effort.files.resourses_discussion+'" class="textbox-small" placeholder="Google Docs link...">\
+                                </span>\
+                                <span class="point tabed">\
+                                    Thesis (Drive with comments) <br>\
+                                    <input type="text" id="thesis'+i+'" value="'+effort.files.thesis+'" class="textbox-small" placeholder="Google Docs link...">\
+                                </span>\
+                                <span class="point tabed">\
+                                    Additional Links <br>\
+                                    <div id="adds'+i+'"></div>\
+                                    <div style="width: 70%; text-align: right; padding-right: 10%; margin-top: 10px;">\
+                                        <button class="btn minibtn" onclick="newAdditionalEffor('+i+')" style="background-color: chocolate;">+ Add More Additional Links</button>\
+                                    </div>\
+                                </span>\
+                            </div>\
+                            <div class="card-action">\
+                                <button style="background-color: rgb(47, 51, 82);" onclick="registerEffort(\''+i+'\')" class="btn">Save Edits</button>\
+                                <button style="background-color: rgb(47, 51, 82);" class="btn">Submit</button>\
+                                <button style="background-color: rgb(47, 51, 82);" class="btn">Share Prgress</button>\
+                                <span id="courseRegisterResult'+i+'"></span>\
+                            </div>\
+                        </div>\
+                    </div>\
+                    '
+                    refreshEditEvents()
+                    effels = ""
+                    effort.files.additional.forEach(additionalEffort => {
+                        effels += '<input type="text" class="textbox-small additionalLink'+i+'" value="'+additionalEffort+'" placeholder="Link to effort..."> <br>'
+                    })
+                    _$("adds"+i).innerHTML = effels
+                    i += 1
+                    nEfforts += 1
+                });*/
+            }
+        });
+    }
+    loadEfforts()
+
+    global_thisProgram = "none"
+    global_thisCourseID = "none"
+    global_courseSubID = 0
+    function loadProgramOfID(event){
+        disable("disabled0")
+        _$("efforts").innerHTML = ""
+        prgid = event.target.getAttribute("HTML_programID")
+        console.log(prgid)
+        global_thisProgram = prgid
+        enable("disabled1")
+        global_courseSubID = 0
+        _$("efforts").innerHTML += '<div id="programInfo"></div>'
+        _$("programInfo").innerHTML += "<div class='programTitle'>"+programs[prgid].programName+"</div>"
+        for (const courseID in programs[prgid].courses) {
+            if (Object.hasOwnProperty.call(programs[prgid].courses, courseID)) {
+                fullid = prgid+"-"+global_courseSubID
+                const course = programs[prgid].courses[courseID];
+                _$("efforts").innerHTML += '\
+                    <div class="section" onclick="setCourseTo(\''+courseID+'\',\''+course.name+'\')" targetSection="sec'+fullid+'">\
+                        <span id="sec'+fullid+'-icon" style="font-family: sporto1; margin-left: 10px;">l</span>\
+                        '+course.name+'\
+                    </div>\
+                        <div class="section-content" id="sec'+fullid+'">\
+                            <span class="point">Topics/Efforts:</span>\
+                        </div>'
+                course.efforts.forEach(effortID => {
+                    console.log(effortID)
+                    _effort = global_efforts[effortID]
+                    //#region
+                    /* 
+                    _$("sec"+fullid).innerHTML += '\
+                    <div class="card" effortID="'+effortID+'" id="effortcard'+i+'">\
+                        <img src="../logoo.png" alt="">\
+                        <div class="card-body">\
+                            <span class="card-headline" id="headline'+i+'">\
+                                '+_effort.title+'\
+                            </span>\
+                            <div class="price xprice" style="background-color: chocolate;">\
+                                <strong>Progress: <span id="progress'+i+'">'+_effort.progress+'</span>%</strong>\
+                                <button class="minibtn gr-up" onclick="moreProgress('+i+')">&nbsp; More</button>\
+                                <button class="minibtn gr-down" onclick="lessProgress('+i+')">&nbsp; Less</button>\
+                            </div>\
+                            <div class="price xprice" style="background-color: chocolate;">\
+                                <strong>left: <span id="deadline'+i+'">'+_effort.deadline+'</span> Weeks</strong>\
+                                <button class="minibtn gr-up">&nbsp; More</button>\
+                                <button class="minibtn gr-down">&nbsp; Less</button>\
+                            </div>\
+                            <div class="card-content">\
+                                <strong>Experience title:</strong> <span class="edit" flag="Experience Title" id="title'+i+'">'+_effort.title+'</span> <br>\
+                                <strong>supervisor:</strong><span class="edit" flag="Supervisor" id="supervisor'+i+'">'+_effort.supervisor+'</span> <br>\
+                                <strong>Files:</strong> <br>\
+                                <span class="point tabed">\
+                                    List of resources (Drive with comments) <br>\
+                                    <input type="text" id="resources'+i+'" value="'+_effort.files.resources+'" class="textbox-small" placeholder="Google Docs link...">\
+                                </span>\
+                                <span class="point tabed">\
+                                    Review of resources (Drive with comments) <br>\
+                                    <input type="text" id="resources_discussion'+i+'" value="'+_effort.files.resourses_discussion+'" class="textbox-small" placeholder="Google Docs link...">\
+                                </span>\
+                                <span class="point tabed">\
+                                    Thesis (Drive with comments) <br>\
+                                    <input type="text" id="thesis'+i+'" value="'+_effort.files.thesis+'" class="textbox-small" placeholder="Google Docs link...">\
+                                </span>\
+                                <span class="point tabed">\
+                                    Additional Links <br>\
+                                    <div id="adds'+i+'"></div>\
+                                    <div style="width: 70%; text-align: right; padding-right: 10%; margin-top: 10px;">\
+                                        <button class="btn minibtn" onclick="newAdditionalEffor('+i+')" style="background-color: chocolate;">+ Add More Additional Links</button>\
+                                    </div>\
+                                </span>\
+                            </div>\
+                            <div class="card-action">\
+                                <button style="background-color: rgb(47, 51, 82);" onclick="registerEffort(\''+i+'\')" class="btn">Save Edits</button>\
+                                <button style="background-color: rgb(47, 51, 82);" class="btn">Submit</button>\
+                                <button style="background-color: rgb(47, 51, 82);" class="btn">Share Prgress</button>\
+                                <span id="courseRegisterResult'+i+'"></span>\
+                            </div>\
+                        </div>\
+                    </div>\
+                    '*/
+                    //#endregion
+                    
+                    _$("sec"+fullid).innerHTML += loadtemplate("effortCard", {
+                            "interval": i,
+                            "effortID": effortID,
+                            "effortTitle": _effort.title, 
+                            "effortProgress": _effort.progress, 
+                            "effortDeadline": _effort.deadline, 
+                            "effortSupervisor": _effort.supervisor, 
+                            "effortResources": _effort.files.resources, 
+                            "effortResourcesDiscussion": _effort.files.resourses_discussion, 
+                            "effortThesis": _effort.files.thesis
+                        })
+                    refreshEditEvents()
+                    effels = ""
+                    _effort.files.additional.forEach(additionalEffort => {
+                        effels += '<a type="text" class="link" href="'+additionalEffort+'" placeholder="Link to effort...">( Click To Follow )</a> <br>'
+                    })
+                    _$("adds"+i).innerHTML = effels
+                    i += 1
+                    nEfforts += 1
+                })
+                global_courseSubID+=1
+                refreshSectionEvents()
+            }
+        }
+    }
+    function setCourseTo(id, title){
+        global_thisCourseID = id
+        newCourseCmds = document.getElementsByClassName("startCourseHeadline")
+        for (let index = 0; index < newCourseCmds.length; index++) {
+            const element = newCourseCmds[index];
+            element.innerHTML = "Add Effort to " + title            
+        }
+        enable('disabled0')
+    }
+    function newAdditionalEffor(effortID){
+        addInput = document.createElement("input")
+        addInput.setAttribute("placeholder", "Link...")
+        addInput.classList = "textbox-small additionalLink" + effortID
+        _$("adds"+effortID).appendChild(addInput)
+    }
+    function addNewProgram(){
+        global_afterAnswerCall = () => {
+            $registerid = getRequestParameters.register
+            httpgo("https://waseemssaeed.pythonanywhere.com","/newprogram/"+$registerid+"/"+global_askAnswer.replaceAll("/", "$slash$").replaceAll("?","$qm$"), (result, error)=>{
+                if(!error.occure){
+                        programListElement = document.createElement("div")
+                        programListElement.classList = "list-item"
+                        programListElement.innerHTML = global_askAnswer + loadtemplate("programEditName", {programID: result})
+                        programListElement.setAttribute("HTML_programID", result)
+                        programListElement.id = "programlistelement-"+result
+                        programListElement.addEventListener("click", ()=>{
+                            loadProgramOfID(event)
+                        }, false)
+                        _$("programslist").appendChild(programListElement)
+                        programs[result] = {
+                            "programID": result,
+                            "programName": global_askAnswer,
+                            "credits": 0,
+                            "courses": {}
+                        }
+                } else {
+                    //alert("network error")
+                    return
+                }
+            })
+        }
+        askUser("Enter Program Name")
+    }
+    function addNewCourse(){
+        if (global_thisProgram == "none"){
+            alert("select program to add courses")
+            return
+        }
+        courseName = prompt("Course Name")
+        global_courseSubID += 1
+        fullid = global_thisProgram + "-" + global_courseSubID
+        courseID = "course"+fullid
+        $registerid = getRequestParameters.register
+        httpgo("https://waseemssaeed.pythonanywhere.com","/newcourse/"+$registerid+"/"+global_thisProgram+"/"+courseID+"/"+courseName, (result, error)=>{
+            if(!error.occure){
+                _$("efforts").innerHTML += '\
+                    <div class="section" onclick="setCourseTo(\''+courseID+'\',\''+courseName+'\')" targetSection="sec'+fullid+'">\
+                        <span id="sec'+fullid+'-icon" style="font-family: sporto1; margin-left: 10px;">l</span>\
+                        '+courseName+'\
+                    </div>\
+                        <div class="section-content" id="sec'+fullid+'">\
+                        </div>'
+            }
+        })
+    }
+    function addNewEffort(){
+        if (global_thisCourseID == "none"){
+            alert("select course to add effort")
+            return
+        }
+        i = nEfforts+1
+        neweffortid = prompt("Effort Title")
+        _neweffortid = ""
+        neweffortid.split(" ").forEach(word => {
+            _neweffortid += word + "_"
+        })
+        $registerid = getRequestParameters.register
+        httpgo("https://waseemssaeed.pythonanywhere.com","/neweffort/"+$registerid+"/"+global_thisProgram+"/"+global_thisCourseID+"/"+_neweffortid, (result, error)=>{
+            if(!error.occure){
+                //#region 
+                _$("efforts").innerHTML += '\
+                        <div class="card" effortID="'+_neweffortid+'" courseID="'+global_thisCourseID+'" programID="'+global_thisProgram+'" id="effortcard'+i+'">\
+                            <img src="../logoo.png" alt="">\
+                            <div class="card-body">\
+                                <span class="edit card-headline" id="headline'+i+'">\
+                                    '+neweffortid+'\
+                                </span>\
+                                <div class="price xprice" style="background-color: chocolate;">\
+                                    <strong>Progress: <span id="progress'+i+'">0</span>%</strong>\
+                                    <button class="minibtn gr-up" onclick="moreProgress('+i+')">&nbsp; More</button>\
+                                    <button class="minibtn gr-down" onclick="lessProgress('+i+')">&nbsp; Less</button>\
+                                </div>\
+                                <div class="price xprice" style="background-color: chocolate;">\
+                                    <strong>left: <span id="deadline'+i+'">8</span> Weeks</strong>\
+                                    <button class="minibtn gr-up">&nbsp; More</button>\
+                                    <button class="minibtn gr-down">&nbsp; Less</button>\
+                                </div>\
+                                <div class="card-content">\
+                                    <strong>Experience title:</strong> <span flag="Experience Title" class="edit" id="title'+i+'">'+neweffortid+'</span> <br>\
+                                    <strong>supervisor:</strong><span flag="Supervisor" class="edit" id="supervisor'+i+'">Your Supervisor </span> <br>\
+                                    <strong>Files:</strong> <br>\
+                                    <span class="point tabed">\
+                                        List of resources (Drive with comments) <br>\
+                                        <input type="text" id="resources'+i+'" class="textbox-small" placeholder="Google Docs link...">\
+                                    </span>\
+                                    <span class="point tabed">\
+                                        Review of resources (Drive with comments) <br>\
+                                        <input type="text" id="resources_discussion'+i+'" class="textbox-small" placeholder="Google Docs link...">\
+                                    </span>\
+                                    <span class="point tabed">\
+                                        Thesis (Drive with comments) <br>\
+                                        <input type="text" id="thesis'+i+'" class="textbox-small" placeholder="Google Docs link...">\
+                                    </span>\
+                                    <span class="point tabed">\
+                                        Additional Links <br>\
+                                        <div id="adds'+i+'"></div>\
+                                        <div style="width: 70%; text-align: right; padding-right: 10%; margin-top: 10px;">\
+                                            <button class="btn minibtn" onclick="newAdditionalEffor('+i+')" style="background-color: chocolate;">+ Add More Additional Links</button>\
+                                        </div>\
+                                    </span>\
+                                </div>\
+                                <div class="card-action">\
+                                    <button style="background-color: rgb(47, 51, 82);" onclick="registerEffort(\''+i+'\')" class="btn">Save Edits</button>\
+                                    <button style="background-color: rgb(47, 51, 82);" class="btn">Submit</button>\
+                                    <button style="background-color: rgb(47, 51, 82);" class="btn">Share Prgress</button>\
+                                    <span id="courseRegisterResult'+i+'"></span>\
+                                </div>\
+                            </div>\
+                        </div>\
+                        '
+                        effels = ""
+                        effels += '<input type="text" class="textbox-small additionalLink'+i+'" value="'+additionalEffort+'" placeholder="Link to effort..."> <br>'
+                        _$("adds"+i).innerHTML = effels
+                        i += 1
+                        refreshEditEvents()
+                //#endregion
+                nEfforts += 1
+            }
+        })
+    }
+
+    function editProgramName(programID){
+        global_afterAnswerCall = () => {
+            $registerid = getRequestParameters.register
+            httpgo("https://waseemssaeed.pythonanywhere.com","/editprogram/"+$registerid+"/programName/"+programID+"/"+global_askAnswer, (result, error)=>{
+                if(result && !error.occure){
+                    location.reload()
+                } else {
+                    //alert("network issue")
+                }
+            })
+        }
+        askUser("New Program Name")
+    }
+    function enable(className){
+        els = document.getElementsByClassName(className)
+        for (let index = 0; index < els.length; index++) {
+            const element = els[index];
+            element.style.pointerEvents = "all"
+            element.style.backgroundColor = "rgb(47, 51, 82)"
+        }
+    }
+
+    function disable(className){
+        els = document.getElementsByClassName(className)
+        for (let index = 0; index < els.length; index++) {
+            const element = els[index];
+            element.style.pointerEvents = "none"
+            element.style.backgroundColor = "rgb(64, 64, 64)"
+        }
+    }
+
+    function moreProgress(effortID){
+        _$("progress"+effortID).innerHTML = Number(_i$("progress"+effortID))+10
+    }
+    function lessProgress(effortID){
+        _$("progress"+effortID).innerHTML = Number(_i$("progress"+effortID))-10
+    }
+</script>
+
+<script src="./jslib.js"></script>
+<script src="../oeip-lib.js"></script>
+<script>
+    traficReg("userprofile");
+    if(!isCookieSet("oeip_sessionIDx" || !isCookieSet("oeip_sessionJSON"))){
+        //location.href = "../"
+    } else {
+       // userjson = JSON.parse(getCookie("oeip_sessionJSON"))
+        //_$("user-pic").setAttribute("src", userjson.picname)
+        //_$("user-name").innerHTML = userjson.uname
+    }
+</script>
+
+<style>
+    #template-editInnerHTML, #template-prompt, #template-effortOptions{
+        position: fixed;
+        top: 1in;
+        left: calc(50% - 2.5in);
+        width: 5in;
+        padding: 10px;
+        border-radius: 10px;
+        background-color: white;
+        box-shadow: 0px 0px 1px 0px gray;
+    }
+    .screen-bg-fog{
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(47, 51, 82, 0.27);
+    }
+</style>
+
+<script>
+    userdata = {
+        "effid1": {
+            "progress": 97,
+            "deadline": [13,"april",2022],
+            "originalDeadline": [13,"january",2022],
+            "title": "Understanding a Brief Introduction to Medical Engineering",
+            "supervisor": "Yllka Hoxa",
+            "files": {
+                "resources": "",
+                "resourses_discussion": "",
+                "thesis": "",
+                "additional": ["","","...",""]
+            }
+        },
+        "effid2": {
+            "progress": 0,
+            "deadline": [13,"april",2022],
+            "originalDeadline": [13,"january",2022],
+            "title": "",
+            "supervisor": "",
+            "files": {
+                "resources": "",
+                "resourses_discussion": "",
+                "thesis": "",
+                "additional": []
+            }
+        }
+    }
+</script>
+<script>
+    function refreshSectionEvents(){
+        secs = document.getElementsByClassName("section");
+        for (let index = 0; index < secs.length; index++) {
+            const element = secs[index];
+            document.getElementById(element.getAttribute("targetSection")).style.display = "none"
+            document.getElementById(element.getAttribute("targetSection") + "-icon").innerHTML = 
+                    document.getElementById(element.getAttribute("targetSection")).style.display == "block" ? "l" : "n";
+            element.addEventListener("click", ()=>{
+                document.getElementById(element.getAttribute("targetSection")).style.display = 
+                    document.getElementById(element.getAttribute("targetSection")).style.display == "none" ? "block" : "none";
+                
+                document.getElementById(element.getAttribute("targetSection") + "-icon").innerHTML = 
+                    document.getElementById(element.getAttribute("targetSection")).style.display == "block" ? "l" : "n";
+            }, false);
+        }
+
+        tabed = document.getElementsByClassName("tabed");
+        for (let index = 0; index < tabed.length; index++) {
+            const element = tabed[index];
+            thismergin = element.style.marginLeft != "<empty string>" ? Number(element.style.marginLeft.split("px")[0]) : 0;
+            element.style.display = "block";
+            element.style.marginLeft = (thismergin+30) + "px";
+            console.log(element.style.display);
+            console.log(element.style.marginLeft);
+        }
+    }
+    function copy(action, text){
+        navigator.clipboard.writeText(text);
+        orignalHTML = action.innerHTML;
+        orignalBG = action.style.backgroundColor;
+        action.innerHTML = "copied!";
+        action.style.backgroundColor = "tomato";
+        setTimeout(()=>{
+            action.innerHTML = orignalHTML;
+            action.style.backgroundColor = orignalBG;
+        }, 1500);
+    }
+</script>
+
+
+<div class="templates">
+    <!--template: card of related topics-->
+    <div id="temp-card">
+        <div class="card">
+            <img src="{$cardImg$}" alt="">
+            <div class="card-body">
+                <span class="card-headline">
+                    {$cardHeadline$}
+                </span>
+                <span class="price" style="background-color: olive;">{$supervisor$}</span>
+                <div class="card-content">{$about$}</div>
+                <div class="card-action">
+                    <button style="background-color: olive;">Go</button>
+                    <button style="background-color: olivedrab;">Events</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="temp-card_events">
+        <div class="card">
+            <img src="{$cardImg$}" alt="">
+            <div class="card-body">
+                <span class="card-headline">
+                    {$cardHeadline$}
+                </span>
+                <span class="price" style="background-color: crimson;">{$supervisor$}</span>
+                <span class="price" style="background-color: palevioletred;">{$date$}</span>
+
+                <div class="card-content">{$about$}</div>
+                <div class="card-action">
+                    <button style="background-color: crimson;">More</button>
+                    <button style="background-color: palevioletred;">Follow</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--template: Effort Card-->
+    <div id="temp-effortcard">
+        <div class="card" effortID="{$effortID$}" id="effortcard{$interval$}">
+            <img src="../logoo.png" alt="">
+            <div class="card-body">
+                <span class="card-headline" id="headline{$interval$}">
+                    {$effortTitle$}
+                </span>
+                <div class="price xprice" style="background-color: chocolate;">
+                    <strong>Progress: <span id="progress{$interval$}">{$effortProgress$}</span>%</strong>
+                </div>
+                <div class="price xprice" style="background-color: chocolate;">
+                    <strong>Total: <span id="deadline{$interval$}">{$effortDeadline$}</span> x3 Hours</strong>
+                </div>
+                <div class="price xprice" style="background-color: chocolate;">
+                    <strong>Left Hours: <span id="deadline{$interval$}">{$effortDeadline$}</span> x3 Hours</strong>
+                </div>
+                <div class="card-content">
+                    <strong>Experience title:</strong> <span class="" flag="Experience Title" id="title{$interval$}">{$effortTitle$}</span> <br>
+                    <strong>supervisor:</strong><span class="" flag="Supervisor" id="supervisor{$interval$}">{$effortSupervisor$}</span> <br>
+                    <strong>Files:</strong> <br>
+                    <a class="point tabed link" id="resources{$interval$}" href="{$effortResources$}">
+                        List of resources (Drive with comments)
+                    </a>
+                    <a class="point link tabed" id="resources_discussion{$interval$}" href="{$effortResourcesDiscussion$}">
+                        Review of resources (Drive with comments)
+                    </a>
+                    <a class="point tabed" id="thesis{$interval$}" href="{$effortThesis$}">
+                        Thesis (Drive with comments)
+                    </a>
+                    <span class="point tabed">
+                        Additional Links <br>
+                        <div id="adds{$interval$}"></div>
+                    </span>
+                </div>
+                <div class="card-action">
+                    <button class="btn">Events</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--template: program delete icon-->
+    <div id="temp-programEditName">
+        <div onclick="editProgramName('{$programID$}')" style="font-family: sporto1; font-size: 80%; display: inline-block;">
+            L
+        </div>
+    </div>
+</div>
+
+<script>
+    templates.card = _i$("temp-card")
+    templates.effortCard = _i$("temp-effortcard")
+    templates.programEditName = _i$("temp-programEditName")
+    templates.card_event = _i$("temp-card_events")
+    topics = [
+        {
+            cardHeadline: "Public and Social Services",
+            supervisor: "Jessica Silva", cardImg: "./jessmin.jpg",
+            about: "Successfully developed and applied a project to improve communication between the Educational Department of the City and the Bolsa Familia Program for the purpose of improving the student attendance and program accountability"
+        },
+        {
+            cardHeadline: "Envirmontal Engineering & Climate Change ",
+            supervisor: "Dr. Victor Ahiaba", cardImg: "./vector.jpg",
+            about: " Teaching Environmental Engineering Courses including Engineering Quantities, Structural Engineering, other Undergraduate and Postgraduate Diploma courses. Administrative and Teaching Assistant to a Professor Supervise and supports undergraduate students in their final year projects Extension services to local farmers General research "
+        }
+    ]
+    
+    _events = [
+        {
+            cardHeadline: "Semenar on Mathematical Programming",
+            supervisor: "Waseem Saeed", cardImg: "./img/me-pic.png",
+            date: "2022 April, 13",
+            about: "Successfully developed and applied a project to improve communication between the Educational Department of the City and the Bolsa Familia Program for the purpose of improving the student attendance and program accountability"
+        },
+        {
+            cardHeadline: "Webinar on Mental Health",
+            supervisor: "Samridhi Bagel", cardImg: "./sam.jpg",
+            date: "2022 May, 2",
+            about: " Teaching Environmental Engineering Courses including Engineering Quantities, Structural Engineering, other Undergraduate and Postgraduate Diploma courses. Administrative and Teaching Assistant to a Professor Supervise and supports undergraduate students in their final year projects Extension services to local farmers General research "
+        }
+    ]
+    topics.forEach(topic => {
+        _$("topics").innerHTML += loadtemplate("card", topic)
+    })
+
+    _events.forEach(_event => {
+        _$("events").innerHTML += loadtemplate("card_event", _event)
+    })
+
+    //trylog()
+</script>
+<style>
+    #logoutbtn{
+        display: none;
+    }
+</style>

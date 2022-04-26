@@ -1,4 +1,403 @@
-<center>
-<h1>thank you from the OEIP team !</h1>
-<h1>We are working in it! <br> this page is not found yet on the Open Expertise Emprovement Platform</h1>
-</center>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Start Here - Open Expertise Improvement Platform</title>
+    <link rel="stylesheet" href="./temp1.css">
+</head>
+<body>
+    <div class="tophead">
+        <img src="./logo2.png" style="height: 1in; margin-top: 0.1in; margin-left: 0.1in; float: left;" alt="">
+        <span class="h1">
+            Start here your best way to improve expertise
+        </span>
+    </div>
+    <div class="secondhead">
+        <input type="text" placeholder="Email/RegisterID...">
+        <input type="text" placeholder="password...">
+        <button>Login</button>
+    </div>
+    <div class="flex100pc">
+        <div class="fch-3in">
+            <div class="list">
+                <div class="list-headline" >
+                    Prepare your Learning Prcess
+                </div>
+                <div class="list-items">
+                    <!--<span class="list-item">Introduction</span>
+                    <span class="list-item">PhD Programme Structure</span>
+                    <span class="list-item">Writing your Reseach Proposal</span>
+                    <span class="list-item checked">Introduction</span>-->
+                    <span class="list-item">1- Create OEIP register</span>
+                    <span class="list-item">2- Transfer your credits/CPD</span>
+                    <span class="list-item">3- Descide your distenation</span>
+                    <span class="list-item">4- Contact a supervisor/mentor</span>
+                    <span class="list-item">5- Register your seat</span>
+                    <span class="list-item">6- Your are all set!</span>
+                </div>
+                <div class="list-headline" >
+                    Additional links
+                </div>
+                <div class="list-items">
+                    <span class="list-item">
+                        <a href="../accountability/index.htm" target="_blank">Appeal, Report, Complaint</a>
+                    </span>
+                    <span class="list-item">Learn more</span>
+                    <span class="list-item">Us on social media</span>
+                    <span class="list-item">Events, Previous Experiences</span>
+                </div>
+            </div>
+        </div>
+        <!--RIGHTHAND BODY-->
+        <div class="fch-1">
+            <!---->
+            <div class="section" targetSection="jump">
+                <span id="jump-icon" style="font-family: sporto1; margin-left: 10px;">l</span>
+                Jump to
+            </div>
+                <div class="section-content" id="jump">
+                    <a href="#createregister-head">
+                        <div class="notif notif-narrow">
+                            Step 1 - Create a Register
+                        </div>
+                    </a>
+                    <a href="#transfer-head">
+                        <div class="notif notif-narrow">
+                            Step 2 - Transfer your Credits/CPD
+                        </div>
+                    </a>
+                    <a href="#contact-head">
+                        <div class="notif notif-narrow">
+                            Step 4 - Contact your Supervisor 
+                        </div>
+                    </a>
+                </div>
+            <!---->
+            <div class="section" id="createregister-head" targetSection="createregister">
+                <span id="createregister-icon" style="font-family: sporto1; margin-left: 10px;">l</span>
+                Step 1 - Create a register
+            </div>
+                <div class="section-content" id="createregister">
+                    <a href="#transfer-head">
+                        <div class="notif">
+                            If you already have a register, click here to proceed to the next step
+                        </div>
+                    </a>
+                    <div class="notif">
+                        If you want to checkup your register status please enter your email or Register ID
+                        <input type="text" id="regSearchKey" placeholder="email or RegisterID..."> 
+                        <button onclick="searchforreg()">
+                            <span style="font-family: sporto1; font-size: 80%;">P</span>
+                            search
+                        </button>
+                        <div id="searchResult">
+
+                        </div>
+                    </div>
+                    <span class="p">
+                        Creating your register will enable you to start your learning journey, get your portfolio and save 
+                        your learning efforts. If you have previous learning activities like CPD (online courses, deplomas, ...)
+                        you will be able to transfer your efforts as credits (please read Transfer your Credits/CPD bellow).
+                    </span>
+                    <div style="padding: 10px;">
+                        <label class="label" for="u_sername">Your Name *</label>
+                        <input class="textarea textbox" placeholder="Name for certificates..." type="username" name="username" id="uname">
+                
+                        <label class="label">Email *</label>
+                        <input class="textarea textbox" placeholder="your email..." type="email" id="uemail">
+
+                        <label class="label">Password *</label>
+                        <input class="textarea textbox" placeholder="strong password..." type="password" id="upassword">
+                                
+                        <label class="label" for="uknow">Where did you hear about OEIP?</label>
+                        <select class="textarea textbox" name="" id="uknow">
+                            <option value="LinkedIn">LinkedIn</option>
+                            <option value="socialmedia">Social Media</option>
+                            <option value="blog-online">A Blog, online article</option>
+                            <option value="friend">Real life (like a talk with a friend)</option>
+                            <option value="Others">Others</option>
+                        </select>
+                
+                        <br>
+                        <div id="registerResult">
+
+                        </div>
+                        <br><br>
+                        <center>
+                            <button onclick="createRegister()" class="btn bigBtn">Start my register</button>
+                        </center>
+                    </div>
+                </div>
+            <!---->
+            <div class="section" targetSection="transfer" id="transfer-head">
+                <span id="transfer-icon" style="font-family: sporto1; margin-left: 10px;">l</span>
+                2- Transfer your Credits/CPD
+            </div>
+                <div class="section-content" id="transfer">
+                    <h3>Your previous efforts are so respected</h3>
+                    <div>
+                        <label class="label" for="credit1">Achievemnt</label>
+                        <input class="textarea textbox" style="height: 0.4in;" type="username" name="username" id="credit1">
+                        <span class="inputNote">
+                            Ex. online course, university degree, deploma,...
+                        </span>
+
+                        <label class="label" for="credit1">Link to achievemnt (or N/A)</label>
+                        <input class="textarea textbox" style="height: 0.4in;" type="username" name="username" id="credit1">
+                        <span class="inputNote">
+                            Ex. Link to online certificate, ReseachGate profile, ScienceDirect Paper of yours,... etc.
+                            <br>
+                            note: in case this is not applicable, please type "n/a"
+                        </span>
+
+                        <label class="label" for="credit1">If applicable, request a Reasonable Adjustments Special Consideration</label>
+                        <textarea placeholder="If applicable, please discribe your situation..." class="textarea" type="text" name="ReasonableAdjust" id="credit1"></textarea>
+                    </div>  
+                    <br>   
+                    <button class="btn" style="font-size: 18px;">
+                        <span style="font-size: 18px; font-weight: bold;">+</span>
+                         Add More
+                    </button>
+                    <button class="btn" style="font-size: 18px;">
+                        <span style="font-family: cov; display: inline-block; font-weight: bold;">Y</span>
+                         Copy all to clipboard
+                    </button>
+                    <button class="btn" style="font-size: 18px; background-color: palevioletred;">
+                        <span style="font-family: cov; display: inline-block; font-weight: bold;"></span>
+                         Continue Later !
+                    </button>
+
+                    <label class="label" for="credit1">Email or Register ID</label>
+                    <input class="textarea textbox" style="height: 0.4in;" type="username" name="username" id="credit1">
+                    
+                    <label class="label" for="credit1">Password</label>
+                    <input class="textarea textbox" style="height: 0.4in;" type="username" name="username" id="credit1">
+                    <br><br>
+                    <button class="btn" style="font-size: 18px;">
+                        <span style="font-family: sporto3; font-size: 18px;">t</span>
+                         Submit to your register
+                    </button>              
+                </div>
+
+            <!---->
+            <div class="section" targetSection="contact" id="contact-head">
+                <span id="contact-icon" style="font-family: sporto1; margin-left: 10px;">l</span>
+                3- Contact your Supervisor
+            </div>
+                <div class="section-content" id="contact">
+                    <span class="p">
+                        Learners would have their own absolute decision to learn from books, online lectures, researches, real-life internships... etc. 
+                        They are strongly encouraged to be curious, to testify, experience, research, define and redefine, think and rethink, review the resources they are using to improve knowledge, decide the shape of knowledge they want to learn by themselves.
+                    </span>
+                    <div class="notif" style="padding-top: 1px; padding-bottom: 1px; background-color: rgba(220, 20, 60, 0.26); border-left-color: crimson;">
+                        Please review, accept or appeal our Health and Safety Policy [HSP] 
+                        <button class="btn" style="background-color: palevioletred;">Read</button>
+                    </div> 
+                    <div class="notif" style="padding-top: 1px; padding-bottom: 1px; background-color: rgba(220, 20, 60, 0.26); border-left-color: crimson;">
+                        Please review, accept or appeal our Safeguarding Learner Policy - [SLP]
+                        <button class="btn" style="background-color: palevioletred;">Read</button>
+                    </div>
+                    <div class="notif">
+                        Apply to be a part of our Academic Supervisors & Peer-to-Peer Mentors
+                        <button class="btn" style="background-color: palevioletred;">Apply here</button>
+                    </div>
+                    <h3>
+                        Academic Supervisors & Peer-to-Peer Mentors
+                    </h3>
+                    <span class="p" style="font-size: 18px; color: rgb(47, 51, 82);">
+                        Start by clicking on supervisor`s name to navigate to their portfolio and discover more or contact
+                    </span>
+                    <br>
+                    <table>
+                        <tr style="font-weight: bold; color: rgb(64, 64, 64);">
+                            <td>
+                                Supervisors
+                            </td>
+                            <td>
+                                Areas of potential supervision of research students
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="width: 20%; vertical-align: top;">
+                                <a target="_blank" href="./ugbede-victor-ahiaba.html" style="text-decoration: none; color: steelblue; font-weight: bold;">
+                                    Ugbede Victor Ahiaba, Dr.
+                                </a>
+                            </td>
+                            <td>
+                                Environmental Engineering, Climate Change, Development Developing countries economics and growth 
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="width: 20%; vertical-align: top;">
+                                <a target="_blank" href="./degel-agoreyo.html" style="text-decoration: none; color: steelblue; font-weight: bold;">
+                                    Degel S. Agoreyo, Eng. MSc.
+                                </a>
+                            </td>
+                            <td>
+                                Artificial Intelligence, Biomedical Engineering, Regulatory, Quality and risk management in pharmaceutical and medical device industries. 
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="width: 20%; vertical-align: top;">
+                                <a target="_blank" href="./samridhi-baghel.html" style="text-decoration: none; color: steelblue; font-weight: bold;">
+                                    Samridhi Baghel, B. A.
+                                </a>
+                            </td>
+                            <td>
+                                Mental health, Volunteering, Education, Content creation and Administration 
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="width: 20%; vertical-align: top;">
+                                <a target="_blank" href="./jessica-silva.htm" style="text-decoration: none; color: steelblue; font-weight: bold;">
+                                    Jessica Pinheiro Silva, Bachelor of Social Work
+                                </a>
+                            </td>
+                            <td>
+                                Msc Human Rights and International Politics candidate <br>
+                                Social work. Humanitarian related, Managarial, leadership 
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+        </div>
+    </div>
+
+    <!--footer-->
+    <div class="halfScreen" style="background-color: rgb(47, 51, 82); color: whitesmoke; padding: 10px; width: calc(100% - 20px); margin-top: 1in;">
+        <div style="display: flex; width: 100%; flex-wrap: wrap; font-size: 16px;">
+            <div style="flex-basis: 320px; padding: 5px;">
+                <h2>Contact</h2>
+                <span>
+                    <strong>
+                        To empower our policy, we encourage all contacts, appeals also are so welcomed
+                    </strong>
+                        <br> <br>
+                    Waseem Sa'eed <br>
+                    w.waseemsalem@gmail.com <br>
+                    Founder, International Coordinator,
+                    Interim Centre Manager.
+                </span>
+            </div>
+            <div style="flex-basis: 320px; padding: 5px;">
+                <h2>Policy</h2>
+                <img src="../779708--.png" style="width: 2in;" alt="">
+                <span style="display: block; font-size: 80%; color: rgba(216, 219, 238, 0.87);">
+                    (United Kingdom based accreditation Company)
+                </span>
+                <br> <span style="font-family: sporto1;">$</span> &nbsp; Appeals Policy and Procedure
+                <br> <span style="font-family: sporto1;">$</span> &nbsp; Assessment and Quality Assurance – [AQA]
+                <br> <span style="font-family: sporto1;">$</span> &nbsp; Centre Management Policy – [CMP]
+                <br> <span style="font-family: sporto1;">$</span> &nbsp; Complaint Policy – [CP]
+                <br> <span style="font-family: sporto1;">$</span> &nbsp; Cookies policy
+                <br> <span style="font-family: sporto1;">$</span> &nbsp; course review process
+                <br> <span style="font-family: sporto1;">$</span> &nbsp; Data Protection Policy
+                <br> <span style="font-family: sporto1;">$</span> &nbsp; Equal Opportunity Charter – [EO]
+                <br> <span style="font-family: sporto1;">$</span> &nbsp; Health and Safety Policy - [HSP]
+                <br> <span style="font-family: sporto1;">$</span> &nbsp; Malpractice Policy – [MP]
+                <br> <span style="font-family: sporto1;">$</span> &nbsp; Privacy Policy
+                <br> <span style="font-family: sporto1;">$</span> &nbsp; Reasonable Adjustments Special Consideration Policy
+                <br> <span style="font-family: sporto1;">$</span> &nbsp; Safeguarding Learner Policy – [SLP]
+            </div>
+            <div style="flex-basis: 320px; padding: 5px;">
+                <h2>Links</h2>
+            </div>
+            <div style="flex-basis: 320px; padding: 5px;">
+                <h2>Open Voluntary Seats</h2>
+                <span style="display: block;">Quality Nominee (unlimited)</span>
+                <span style="display: block;">Centre Manager ( 1 )</span>
+                <span style="display: block;">Internal Quality Assurer IQA ( 2 )</span>
+                <span style="display: block;">Centre Administrator ( 1 )</span>
+                <span style="display: block;">Support Officer ( 1 )</span>
+
+                <style>
+                    .btnx{
+                        outline: none;
+                        border: none;
+                        cursor: pointer;
+                        font-size: 16px;
+                        margin: 10px;
+                        background-color: whitesmoke;
+                        color: rgba(47, 51, 82, 0.87);
+                        font-weight: bold;
+                        box-shadow: none;
+                    }
+                </style>
+                <center>
+                    <button class="btnx"><span style="font-family: sporto1; font-size: 90%;">$</span> &nbsp; Click to Apply</button>
+                </center>
+            </div>
+        </div>
+    </div>
+
+    <center>
+        <div style="font-size: 16px; padding: 10px; padding-bottom: 40px; padding-top: 20px; background-color: rgb(47, 51, 82); border-top: 1px dashed whitesmoke; color: whitesmoke;">
+            Copyright &copy; <br>
+            All rights reserved ( 2021 - 2022 )
+        </div>
+    </center>
+
+    <!--screen in screen-->
+    <!--<center>
+        <div style="display: block; background-color: rgba(47, 51, 82, 0.47); position: fixed; width: 100vw; height: 100vh; left: 0px; top: 0px;">
+            <button onclick="display(this.parentElement)">close</button>
+            <br>
+            <iframe src="./jessica-silva.htm" style="width: 80%; height: 80%;" frameborder="0"></iframe>
+        </div>
+    </center>-->
+</body>
+</html>
+
+<script src="./jslib.js"></script>
+<script>
+    secs = document.getElementsByClassName("section");
+    for (let index = 0; index < secs.length; index++) {
+        const element = secs[index];
+        element.addEventListener("click", ()=>{
+            document.getElementById(element.getAttribute("targetSection")).style.display = 
+                document.getElementById(element.getAttribute("targetSection")).style.display == "none" ? "block" : "none";
+            
+            document.getElementById(element.getAttribute("targetSection") + "-icon").innerHTML = 
+                document.getElementById(element.getAttribute("targetSection")).style.display == "block" ? "l" : "n";
+        }, false);
+    }
+
+    function display(el){
+        el.style.display = el.style.display == "block" ? "none" : "block";
+    }
+
+    function searchforreg(){
+        searchKey = document.getElementById("regSearchKey").value;
+        document.getElementById("searchResult").innerHTML = "searching...";
+        i = 0;
+        httpgo("http://waseemssaeed.pythonanywhere.com/checkregister/", searchKey, (result)=>{
+            if (result != "null" && result != "error"){
+                reshtml = "";
+                reshtml += "<strong style=\"color: rgba(47, 51, 82, 0.963)\">Status:</strong> Exists";
+                reshtml += "<br>";
+                reshtml += "<strong style=\"color: rgba(47, 51, 82, 0.963)\">Link to Portfolio:</strong> <a href=\"https://oiep.github.io/portfolio/profile.htm?id=" + result + "\">Click Here</a>";
+                document.getElementById("searchResult").innerHTML = reshtml;
+            } else {
+                if(result == "error"){
+                    document.getElementById("searchResult").innerHTML = "internet connection error";
+                } else {
+                    document.getElementById("searchResult").innerHTML = "Register ID not exist";
+                }
+            }
+        });
+    }
+
+    function createRegister(){
+        $username = document.getElementById("uname").value;
+        $useremail = document.getElementById("uemail").value;
+        $userpassword = document.getElementById("upassword").value;
+        $userhowknow = document.getElementById("uknow").value;
+        // todo: separate $userhowknow from his own data
+        // todo: stronge data encryption
+        httpgo("https://waseemssaeed.pythonanywhere.com/registersession/create/"+$useremail+"/"+ $userpassword+"/"+$userhowknow+"/"+$username, "", (result)=>{
+            document.getElementById("registerResult").innerHTML = result;
+        });
+    }
+</script>

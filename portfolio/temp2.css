@@ -66,7 +66,7 @@ body{
     vertical-align: middle;
 }
 
-textarea{
+textarea, .textarea{
     width: 80%;
     height: 1in;
     resize: vertical;
@@ -76,13 +76,26 @@ textarea{
 
     padding: 5px;
 }
+
 @media screen and (max-width: 1000px){
-    textarea{
+    textarea, .textarea{
         width: calc(100% - 10px);
         height: 2in;
     }
 }
-
+.textbox{
+    height: 0.5in;
+    padding: 3px;
+}
+label{
+    display: block;
+    margin-top: 20px;
+}
+.inputNote{
+    display: block;
+    font-size: 15px;
+    color: rgb(64, 64, 64);
+}
 #loadingmaster{
     position: fixed;
     width: 100vw;

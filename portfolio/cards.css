@@ -1,0 +1,97 @@
+.card{
+    width: 100%;
+    background-color: gainsboro;
+    color: rgb(64, 64, 64);
+    padding: 10px;
+    margin: 10px;
+}
+
+.card-headline{
+    font-size: 25px;
+    font-weight: bold;
+    display: block;
+}
+
+.price{
+    padding: 3px;
+    padding-left: 10px; padding-right: 10px;
+    display: inline-block;
+    background-color: steelblue;
+    background-color: rebeccapurple;
+    color: whitesmoke;
+    border-radius: 5px;
+    font-size: 13px;
+    box-shadow: none;
+    margin: 5px;
+}
+
+.card-action{
+    float: right;
+    margin-right: 10%;
+}
+.card-action button{
+    padding: 10px;
+    background-color: steelblue;
+    color: whitesmoke;
+    font-size: 18px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.card-content{
+    padding: 10px;
+}
+
+.card img{
+    width: 20%;
+    filter: opacity(95%);
+}
+
+.card-body{
+    padding-left: 5px;
+    vertical-align: top;
+    width: 75%;
+    display: inline-block;
+}
+
+.link::after{
+    content: '$';
+    font-family: sporto1;
+    font-size: 60%;
+    color: rgba(47, 51, 82, 0.963);
+    vertical-align: top;
+    margin-left: 3px;
+}
+
+.card-content strong{
+    color: rgba(47, 51, 82, 0.963);
+}
+
+.minibtn{
+    font-size: 14px;
+    padding: 2px;
+    cursor: pointer;
+    margin-top: 1px;
+    margin-bottom: 1px;
+    border: 1px dotted steelblue;
+}
+@media screen and (max-width: 600px) {
+    .card img{
+        width: 100%;
+    }
+    .card-body, .card-content{
+        width: calc(100% - 10px);
+    }
+    .card-action{
+        float: none;
+        margin: 0px;
+        width: unset;
+    }
+    .card{
+        width: 100%;
+    }
+    .price{
+        margin: 2px;
+    }
+}

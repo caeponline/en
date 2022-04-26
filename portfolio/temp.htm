@@ -1,0 +1,50 @@
+<div id="temp-effortcard">
+    <div class="card" effortID="{$effortID$}" id="effortcard{$interval$}">
+        <img src="../logoo.png" alt="">
+        <div class="card-body">
+            <span class="card-headline" id="headline{$interval$}">
+                {$effortTitle$}
+            </span>
+            <div class="price xprice" style="background-color: chocolate;">\
+                <strong>Progress: <span id="progress{$interval$}">{$effortProgress$}</span>%</strong>
+                <button class="minibtn gr-up" onclick="moreProgress({$interval$})">&nbsp; More</button>
+                <button class="minibtn gr-down" onclick="lessProgress({$interval$})">&nbsp; Less</button>
+            </div>
+            <div class="price xprice" style="background-color: chocolate;">
+                <strong>left: <span id="deadline{$interval$}">{$effortDeadline$}</span> Weeks</strong>
+                <button class="minibtn gr-up">&nbsp; More</button>
+                <button class="minibtn gr-down">&nbsp; Less</button>
+            </div>
+            <div class="card-content">
+                <strong>Experience title:</strong> <span class="edit" flag="Experience Title" id="title{$interval$}">{$effortTitle$}</span> <br>
+                <strong>supervisor:</strong><span class="edit" flag="Supervisor" id="supervisor{$interval$}">{$effortSupervisor$}</span> <br>
+                <strong>Files:</strong> <br>
+                <span class="point tabed">
+                    List of resources (Drive with comments) <br>
+                    <input type="text" id="resources{$interval$}" value="{$effortResources$}" class="textbox-small" placeholder="Google Docs link...">
+                </span>
+                <span class="point tabed">
+                    Review of resources (Drive with comments) <br>
+                    <input type="text" id="resources_discussion{$interval$}" value="{$effortResourcesDiscussion$}" class="textbox-small" placeholder="Google Docs link...">
+                </span>
+                <span class="point tabed">
+                    Thesis (Drive with comments) <br>
+                    <input type="text" id="thesis{$interval$}" value="{$effortThesis$}" class="textbox-small" placeholder="Google Docs link...">
+                </span>
+                <span class="point tabed">
+                    Additional Links <br>
+                    <div id="adds{$interval$}"></div>
+                    <div style="width: 70%; text-align: right; padding-right: 10%; margin-top: 10px;">
+                        <button class="btn minibtn" onclick="newAdditionalEffor({$interval$})" style="background-color: chocolate;">+ Add More Additional Links</button>
+                    </div>
+                </span>
+            </div>
+            <div class="card-action">
+                <button style="background-color: rgb(47, 51, 82);" onclick="registerEffort('{$interval$}')" class="btn">Save Edits</button>
+                <button style="background-color: rgb(47, 51, 82);" class="btn">Submit</button>
+                <button style="background-color: rgb(47, 51, 82);" class="btn">Share Prgress</button>
+                <span id="courseRegisterResult{$interval$}"></span>
+            </div>
+        </div>
+    </div>
+</div>

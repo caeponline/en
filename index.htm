@@ -9,15 +9,14 @@
     <link rel="stylesheet" href="sscreen.css">
     <link rel="stylesheet" href="items.css">
     <link rel="stylesheet" href="./scroller.css">
-    <link rel="stylesheet" href="./janess/jss.css">
     <link rel="stylesheet" href="./cards.css">
-    <link rel="shortcut icon" href="./worldHigh.svg" type="image/x-icon">
-<link rel="stylesheet" href="./graphics/css/sporto1.css">
-<link rel="stylesheet" href="./graphics/css/sporto2.css">
-<link rel="stylesheet" href="./graphics/css/sporto3.css">
-<link rel="stylesheet" href="./graphics/css/sporto4.css">
-<link rel="stylesheet" href="./graphics/css/sporto5.css">
-<link rel="stylesheet" href="./graphics/css/sporto6.css">
+    <link rel="shortcut icon" href="./logo2.png" type="image/x-icon">
+    <link rel="stylesheet" href="./graphics/css/sporto1.css">
+    <link rel="stylesheet" href="./graphics/css/sporto2.css">
+    <link rel="stylesheet" href="./graphics/css/sporto3.css">
+    <link rel="stylesheet" href="./graphics/css/sporto4.css">
+    <link rel="stylesheet" href="./graphics/css/sporto5.css">
+    <link rel="stylesheet" href="./graphics/css/sporto6.css">
 
     <style>
         html {
@@ -25,27 +24,216 @@
         }
     </style>
 </head>
-<body onscroll="sc()" id="bodyy">
-    <div class="nb">
-        <img src="./logo2.png" class="nlogo mobile-logo" style="float: left; margin-left: 0.1in; height: 0.8in; margin-top: 0.1in;" alt="">
+<link rel="stylesheet" href="./mergestyle/style2.css">
+<link rel="stylesheet" href="./mergestyle/media.css">
+
+<body onscroll="//sc()" id="bodyy">
+    <button onclick="menu()" style="position: absolute; top: 10px;left: 10px;" class="menu"></button>
+    <div id="navbar" class="nb">
+        <img src="./logo2.png" class="nlogo mobile-logo mobile-logo-hide" style="float: left; margin-left: 0.1in; height: 0.8in; margin-top: 0.1in;" alt="">
         <div class="nbtns mobile-nbtns">
-            <a href="#screen1" style="text-decoration: none;"><button class="nbtn steel">WELCOME</button></a>
-            <a href="#screenCollaboration" style="text-decoration: none;"><button class="nbtn">ACCREDITAION</button></a>
-            <a href="#screenAbout" style="text-decoration: none;"><button class="nbtn">INVOLVE</button></a>
-            <a href="#screenAbout" style="text-decoration: none;"><button class="nbtn">DEVELOPMENT</button></a>
-            <a href="#screenAbout" style="text-decoration: none;"><button class="nbtn">Media and Relationships</button></a>
-        </div>
-    </div>
-    <div class="nbm"></div>
-    <div id="headingo" style="width: 100%;">
-        <img src="./logoo.png" class="nlogo mobile-logo" alt="">
-        <button style="text-align: left; outline: none; border: none; height: 100%; vertical-align: middle; font-size: 30px; margin-left: 30px;">
-            <strong>Open Expertise Improvement Platform - OEIP</strong>
-            <br>
-            Your wave
-        </button>
+            <a href="#bodyy" style="text-decoration: none;"><button class="nbtn steel">WELCOME</button></a>
+            <a href="#screenCollaboration" style="text-decoration: none;"><button class="nbtn">Accredited initiatives</button></a>
+            <a href="#screenAbout" style="text-decoration: none;"><button class="nbtn">Upcoming Exams</button></a>
+            <a href="#footer" style="text-decoration: none;"><button class="nbtn">Policy</button></a>
+            <a href="#footer" style="text-decoration: none;"><button class="nbtn">Media and Relationships</button></a>
+            <button class="closeMenu" onclick="menu()">
+                Close Menu
+            </button>
+        </div>  
     </div>
     <style>
+        .closeMenu{
+            display: none;
+        }
+        .desktop-hide{
+            display: none;
+        }
+        @media screen and (max-width: 600px){
+            .desktop-hide{
+                display: inline-block;
+            }
+            .nb, #navbar{
+                display: none;
+                padding-top: 0.8in;
+                background-color: rgba(47, 51, 82, 0.905);
+            }
+            .mobile-logo-hide{
+                display: none;
+            }
+            .np, #navbar{
+                height: 100%;
+                overflow-y: scroll;
+            }
+            .mobile-nbtns{
+                width: 80%;
+                margin-left: 10%;
+            }
+            .mobile-nbtns button{
+                display: block;
+                height: 0.7in;
+                width: 100%;
+                color: whitesmoke;
+            }
+            .mobile-nbtns button::before{
+                color: whitesmoke;
+            }
+            .closeMenu{
+                display: block;
+                background-color: rgb(47, 51, 82);
+                outline: none;
+                border: none;
+                font-size: 20px;
+                border-radius: 10px;
+                cursor: pointer;
+            }
+        }
+    </style>
+    <div id="nbm" class="nbm"></div>
+
+    <style>
+        #headingo--{
+            font-size: 30px;
+        }
+    </style>
+
+    <style>
+        #usernav{
+            display: none;
+            position: fixed;
+            top: 0px;
+            right: 0px;
+            z-index: 1;
+            width: unset;
+            background-color: transparent;
+            color: rgb(47, 51, 82);
+            height: 0.5in;
+            padding: 10px;
+            padding-top: 20px;
+        }
+        #usernav .img-div{
+            width: 0.5in;
+            height: 0.5in;
+            overflow: hidden;
+            border-radius: 50%;
+        }
+        #usernav .img-div img{
+            width: 100%;
+        }
+        #usernav .img-div, .user-name{
+            display: inline-block;
+            vertical-align: middle;
+        }
+        #usernav .user-name{
+            font-size: 20px;
+            padding-left: 10px;
+            font-weight: bold;
+        }
+        #usernav .user-name a{
+            cursor: pointer;
+            border-bottom: 1px dashed currentColor;
+        }
+        #usernav .logout, #usernav .notifs, #usernav .profile, #usernav .menu, .menu{
+            background-color: transparent;
+            position: relative;
+            border: none;
+            outline: none;
+            font-size: 18px;
+            line-height: 0.35in;
+            color: inherit;
+
+            background-color: rgb(47, 51, 82);
+            color: whitesmoke;
+            height: 0.4in; width: 0.4in;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        #usernav .notifs::before{
+            content: 'c';
+            font-family: sporto1;
+            color: inherit;
+        }
+        #usernav .notifs::after{
+            content: '1';
+            font-size: 14px;
+            line-height: 0.2in;
+            position: absolute;
+            left: 0px;
+            margin-top: -5px;
+            margin-left: -5px;
+            width: 0.2in; height: 0.2in;
+            background-color: crimson;
+            border-radius: 50%;
+        }
+        #usernav .logout::before{
+            content: 'm';
+            font-family: sporto4;
+            color: inherit;
+        }
+        #usernav .profile::before{
+            content: 'n';
+            font-family: sporto1;
+            color: inherit;
+        }
+        #usernav .menu::before, .menu::before{
+            content: 'S';
+            font-family: sporto1;
+            color: inherit;
+        }
+        /*#headingo, #sc1, #navbar, #nbm{
+            display: none;
+        }*/
+        @media screen and (max-width: 600px) {
+            body{
+                padding-top: 1in;
+            }
+            #usernav{
+                width: calc(100% - 20px);
+                background-color: rgb(47, 51, 82);
+                color: whitesmoke;
+                padding-top: 10px;
+            }
+            #usernav .logout, #usernav .notifs, #usernav .profile{
+                width: 0.4in;
+                height: 0.4in;
+
+            }
+            #usernav .user-name{
+                font-size: 17px;
+                line-height: 0.5in;
+                vertical-align: middle;
+            }
+        }
+        @media screen and (max-width: 330px) {
+            #usernav .logout, #usernav .notifs, #usernav .profile{
+                width: 0.3in;
+                height: 0.3in;
+            }
+            #usernav .user-name{
+                font-size: 14px;
+                line-height: 0.5in;
+                vertical-align: middle;
+            }
+        }
+    </style>
+
+    <div id="usernav">
+    </div>  
+
+    <div id="headingo" style="width: 100%;">
+        <img src="./logoo.png" class="nlogo mobile-logo" alt="">
+        <button id="headingo--" style="text-align: left; outline: none; border: none; height: 100%; vertical-align: middle; margin-left: 30px;">
+            <strong>Open Expertise Improvement Platform</strong>
+            <br>
+            Diverse, interactive, collaborative...
+        </button>
+    </div>
+
+    <style>
+        .h1{
+            font-size: 30px;
+            display: block;
+        }
         #headingo{
             height: 2in;
             background-color: whitesmoke; color: rgb(47, 51, 82);
@@ -64,6 +252,7 @@
                 height: unset;
                 color: rgb(47, 51, 82);
                 background-color: whitesmoke;
+
             }
             #headingo button{
                 color: rgb(47, 51, 82);
@@ -82,7 +271,47 @@
         }
     </style>
 
-    <div class="halfScreen">
+    <div id="sc1">
+        <div id="s1-left">
+            <h1 class="fd" style="margin-top: 10%;">
+                Apply for the first 5,000 Tution-free Scholarships on #oeip
+            </h1>
+            <div>
+                <label for="blog-title">Username/Email</label>
+                <input type="text" placeholder="Email or Username..." class="textbox">
+    
+                <label for="blog-title">Password</label>
+                <input type="password" placeholder="Password..." class="textbox">
+
+                <div class="btnhd">
+                    <!--<button style="background-color: whitesmoke; color: slateblue;">
+                        Earn my first 1.00 EduCredits
+                    </button>-->
+                    <button style="background-color: whitesmoke; color: slateblue;">
+                        Start My Register
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="s1-right">
+            <h2>
+                <!--Already have EduCredits wallet?-->
+                Already Here? login...
+            </h2>
+            <label for="uname">Username, Email</label>
+            <input type="text" class="textbox" id="uname" placeholder="Username or Email...">
+
+            <label for="upass">Password</label>
+            <input type="password" class="textbox" id="upassword" placeholder="Password...">
+
+            <div class="btnhd">
+                <button onclick="pageLocalLoginFunction()" id="loginbtn">Login</button>
+                <!--<button>What is EduCredits?</button>-->
+            </div>
+        </div>
+    </div>
+
+    <!--<div class="halfScreen">
         <center>
             <h1 style="margin-top: 5%; font-size: 40px;">
                 <span style="font-family: sporto2; display: block; font-size: 150px; color: rgb(64, 64, 64);">
@@ -92,7 +321,7 @@
                <span style="font-family: sporto3; font-size: 70%; color: rgb(47, 51, 82);">L</span>
             </h1>
         </center>
-    </div>
+    </div>-->
 
     <div style="margin: 20px; margin-left: 10px; margin-right: 10px; width: calc(100% - 20px);">
         <span class="h1">
@@ -152,7 +381,9 @@
         </div>
     </div>
 
-    <div class="halfScreen" style="background-color: rgb(47, 51, 82); color: whitesmoke; padding: 10px; width: calc(100% - 20px);">
+    <div id="footer" class="halfScreen" style="
+    background-color: rgb(47, 51, 82); color: whitesmoke; padding: 10px; 
+    width: calc(100% - 20px); padding-top: 1in;">
         <div style="display: flex; width: 100%; flex-wrap: wrap; font-size: 16px;">
             <div style="flex-basis: 320px; padding: 5px;">
                 <h2>Contact</h2>
@@ -217,10 +448,10 @@
             </div>
        </div>
     </div>
+    
+    <!--<div id="scroller">
 
-    <div id="scroller">
-
-    </div>
+    </div>-->
 
     <div id="pop1" class="pop">
         <style>
@@ -258,42 +489,23 @@
     <center>
         <div style="font-size: 16px; padding: 10px; padding-bottom: 40px; padding-top: 20px; background-color: rgb(47, 51, 82); border-top: 1px dashed whitesmoke; color: whitesmoke;">
             Copyright &copy; <br>
-            All Rights Belong to ( Waseem Saeed, 2021 - 2022 )
+            All rights reserved ( 2021 - 2022 )
         </div>
     </center>
 </body>
 </html>
 
 <script>
-    s = 0;
+    /*s = 0;
     function sc(){
         thisPointPercentageOfHeight = (scrollY * 100) / (document.getElementById("bodyy").scrollHeight - 700);
         document.getElementById("scroller").style.width = ((thisPointPercentageOfHeight * document.getElementById("bodyy").clientWidth) / 100) + "px";
-    }
-
+    }*/
 </script>
 
-
+<script src="./portfolio/jslib.js"></script>
+<script src="./oeip-lib.js"></script>
 <script>
-mydate = new Date();
-$server = 'https://waseemssaeed.pythonanywhere.com/orderInFile/{"newvisit":"'+
-    mydate.toUTCString()+'", "zone":"'+
-    Intl.DateTimeFormat().resolvedOptions().timeZone.split("/")[0] + "-"
-    + Intl.DateTimeFormat().resolvedOptions().timeZone.split("/")[1]
-    +'"}/oeip-trafic.json';
-var httpGetJSON = new XMLHttpRequest;
-if (httpGetJSON.readyState == 4 || httpGetJSON.readyState == 0){
-    httpGetJSON.open("GET", $server, true);
-    httpGetJSON.onreadystatechange = function(){
-        if (httpGetJSON.readyState == 4)
-        {
-            if (httpGetJSON.status == 200)
-            {
-                console.log(httpGetJSON.responseText);
-            }
-        }
-    };
-    httpGetJSON.send(null);
-}
-
+    traficReg("index");
+    trylog();
 </script>

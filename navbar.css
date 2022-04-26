@@ -5,16 +5,22 @@ body{
     background-color: whitesmoke;
     margin: 0px;
 }
+#navbar{
+    display: block;
+}
 .nb{
+    display: block;
     position: fixed;
     height: 1in;
     background-color: white;
-    left: 0px;
+    left: 0px ;
     top: 0.03in;
+    top: 0in; /*0.03 if you get back scroll indecator*/
     width: 100%;
     z-index: 1;
-
     background-color: whitesmoke;
+
+    border-bottom: 1px dashed rgba(47, 51, 82, 0.418);
 }
 .nbm{
     height: 1.03in;

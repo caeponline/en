@@ -1,15 +1,13 @@
 .card{
-    flex-basis: 2.8in;
-    min-height: 2in;
+    flex-basis: 10in;
+    /*min-height: 2in;*/
     background-color: gainsboro;
     margin: 5px;
     padding: 5px;
     /*border-top-left-radius: 10px;
     border-top-right-radius: 10px;*/
 }
-.card:hover .card-headline{
-    color: steelblue;
-}
+
 .card:hover .jbtn{
     background-color: whitesmoke;
     color: steelblue;
@@ -17,24 +15,68 @@
     border: 2px solid steelblue;
 }
 .card img{
-    width: 100%;
+    width: 20%;
+    vertical-align: top;
     filter: opacity(90%);
+    display: inline;
     /*border-top-left-radius: 10px;
     border-top-right-radius: 10px;*/
 }
+.card-body{
+    width: 76%; display: inline-block;
+}
+.card-content{
+    padding: 10px;
+    font-size: 20px;
+}
+@media screen and (max-width: 600px){
+    .card{
+        padding: 15px;
+        border-radius: 10px;
+    }
+    .card img{
+        width: 100%;
+    }
+    .card-body{
+        width: 100%;
+    }
+    .card-content{
+        padding: 5px;
+    }
+}
 .card-headline{
     display: block;
-    font-size: 30px;
+    font-size: 23px;
     font-weight: bold;
     text-transform: capitalize;
+    color: rgb(47, 51, 82);
 }
 .card-action{
     float: right;
-    margin-right: 20px;
+    margin-right: 50px;
+}
+.card-action button{
+    background-color: rgb(47, 51, 82);
+    background-color: darkcyan;
+    cursor: pointer;
+    color: whitesmoke;
+    border: none;
+    outline: none;
+    padding: 10px;
+    font-size: 18px;
+    box-shadow: 0px 0px 1px 0px whitesmoke;
+    border-radius: 10px;
+}
+.card-action button:hover{
+    border-radius: 0px;
+    transition: 0.4s;
 }
 .price{
     border: none;
     outline: none;
     background-color: rgb(64, 64, 64);
     color: whitesmoke;
+    padding: 3px;
+    border-radius: 5px;
+    font-size: 12px;
 }

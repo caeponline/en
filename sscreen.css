@@ -4,6 +4,9 @@
     position: relative;
     overflow: hidden;
 }
+#sc1{
+    display: flex; flex-wrap: wrap; width: 100%; min-height: 100vh;
+}
 .halfScreen{
     min-height: 50vh;
     min-height: 50vh;

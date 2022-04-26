@@ -1,0 +1,59 @@
+.h1, h1{
+    font-size: 50px;
+}
+.h2, h2{
+    font-size: 40px;
+}
+
+#s1-left{
+    flex-basis: 6in; padding: 0.3in; padding-left: 0.5in; border-right: 0.2in dashed whitesmoke;
+     background-color: rgb(64, 64, 64); background-color: rgb(47, 51, 82); color: whitesmoke;
+}
+#s1-right{
+    flex: 1; padding: 0.3in; padding-top: 0.8in; border-left: 0.2in dashed rgb(47, 51, 82);
+    border-right: 0.5in dashed rgb(140, 149, 216);
+
+}
+.btnhd{
+    float: right; margin-right: 20%; margin-top: 20px;
+}
+label{
+    margin-top: 10px;
+    display: block;
+    font-size: 20px;
+    width: unset;
+    text-align: unset;
+}
+.point{
+    display: block;
+    font-size: 30px;
+}
+.point::before{
+    content: 'r';
+    font-family: sporto2;
+    font-size: 75%;
+    margin-right: 10px;
+    color: slateblue;
+}
+.textbox{
+    display: block;
+    width: 80%;
+    height: 0.4in;
+    outline: none;
+    padding: 5px;
+    font-size: 16px;
+}
+
+.btnhd button{
+    outline: none;
+    border: none;
+    padding: 15px;
+    margin: 5px;
+    font-size: 19px;
+    font-weight: bold;
+    background-color: slateblue;
+    color: whitesmoke;
+    cursor: pointer;
+    border-radius: 2px;
+    box-shadow: none;
+}

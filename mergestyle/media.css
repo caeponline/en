@@ -1,0 +1,29 @@
+@media screen and (max-width: 500px){
+    h1, .h1{
+        font-size: 30px;
+    }
+    #s1-left{
+        padding: 10px;
+        height: 100vh;
+        border: unset;
+    }
+    .textbox{
+        width: 90%;
+    }
+    .btnhd{
+        float: unset;
+        margin-right: unset;
+        margin-top: 10px;
+        width: 100%;
+    }
+    .btnhd button{
+        font-size: 14px;
+        float: right;
+    }
+
+    #s1-right{
+        padding: 10px;
+        height: 100vh;
+        border: unset;
+    }
+}

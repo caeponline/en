@@ -1210,7 +1210,7 @@
                 <div class="card-action">
                     <button style="background-color: rgb(47, 51, 82);" onclick="registerEffort('{$interval$}')" class="btn">Save Edits</button>
                     <button style="background-color: rgb(47, 51, 82);" class="btn">Submit</button>
-                    <button style="background-color: rgb(47, 51, 82);" onclick="copy(this, 'localhost/oeip/github/portfolio/share.htm?register={$registerID$}')" class="btn">Share Prgress</button>
+                    <button style="background-color: rgb(47, 51, 82);" onclick="copy(this, 'oeip.github.io/en/portfolio/share.htm?register={$registerID$}')" class="btn">Share Prgress</button>
                     <button target="menu-tools-{$effortID$}" onclick="openToolsMenu(event)" class="btn toggle-down">Tools</button>
                     <div class="floatmenu" id="menu-tools-{$effortID$}">
                         <button style="background-color: unset; color: unset; text-align: unset;" class="floatmenu-item" effortID="{$effortID$}">Start Survey</button>
@@ -1296,7 +1296,18 @@
     ]
     
     _events = [
-
+        {
+            cardHeadline: "Semenar on Mathematical Programming",
+            supervisor: "Waseem Saeed", cardImg: "./img/me-pic.png",
+            date: "2022 April, 13",
+            about: "Successfully developed and applied a project to improve communication between the Educational Department of the City and the Bolsa Familia Program for the purpose of improving the student attendance and program accountability"
+        },
+        {
+            cardHeadline: "Webinar on Mental Health",
+            supervisor: "Samridhi Bagel", cardImg: "./sam.jpg",
+            date: "2022 May, 2",
+            about: " Teaching Environmental Engineering Courses including Engineering Quantities, Structural Engineering, other Undergraduate and Postgraduate Diploma courses. Administrative and Teaching Assistant to a Professor Supervise and supports undergraduate students in their final year projects Extension services to local farmers General research "
+        }
     ]
     topics.forEach(topic => {
         _$("topics").innerHTML += loadtemplate("card", topic)

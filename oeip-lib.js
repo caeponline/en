@@ -1,5 +1,5 @@
 
-host = "http://localhost/oeip/github"
+host = "https://oeip.github.io/en"
 
 templates = {
     header: "<h1>{$username$}</h1> <br> <h2>{$lastname$} is his lastname</h2>",

@@ -4,7 +4,7 @@
     }
     #s1-left{
         padding: 10px;
-        height: 100vh;
+        /*height: 100vh;*/
         border: unset;
     }
     .textbox{
@@ -23,7 +23,7 @@
 
     #s1-right{
         padding: 10px;
-        height: 100vh;
+        /*height: 100vh;*/
         border: unset;
     }
 }

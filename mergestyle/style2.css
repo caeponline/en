@@ -8,11 +8,19 @@
 #s1-left{
     flex-basis: 6in; padding: 0.3in; padding-left: 0.5in; border-right: 0.2in dashed whitesmoke;
      background-color: rgb(64, 64, 64); background-color: rgb(47, 51, 82); color: whitesmoke;
+
+     /*wed may 4, 2022*/
+    padding-top: 0.8in;
+    border-right: unset;
 }
 #s1-right{
     flex: 1; padding: 0.3in; padding-top: 0.8in; border-left: 0.2in dashed rgb(47, 51, 82);
     border-right: 0.5in dashed rgb(140, 149, 216);
 
+    /*wed may 4, 2022*/
+    padding-top: unset;
+    border-left: 10px dotted rgb(47, 51, 82);
+    margin-left: 5px;
 }
 .btnhd{
     float: right; margin-right: 20%; margin-top: 20px;

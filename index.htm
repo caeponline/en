@@ -273,27 +273,6 @@
 
     <div id="sc1">
         <div id="s1-left">
-            <h1 class="fd" style="margin-top: 10%;">
-                Apply for the first 5,000 Tution-free Scholarships on #oeip
-            </h1>
-            <div>
-                <label for="blog-title">Username/Email</label>
-                <input type="text" placeholder="Email or Username..." class="textbox">
-    
-                <label for="blog-title">Password</label>
-                <input type="password" placeholder="Password..." class="textbox">
-
-                <div class="btnhd">
-                    <!--<button style="background-color: whitesmoke; color: slateblue;">
-                        Earn my first 1.00 EduCredits
-                    </button>-->
-                    <button style="background-color: whitesmoke; color: slateblue;">
-                        Start My Register
-                    </button>
-                </div>
-            </div>
-        </div>
-        <div id="s1-right">
             <h2>
                 <!--Already have EduCredits wallet?-->
                 Already Here? login...
@@ -305,8 +284,44 @@
             <input type="password" class="textbox" id="upassword" placeholder="Password...">
 
             <div class="btnhd">
-                <button onclick="pageLocalLoginFunction()" id="loginbtn">Login</button>
+                <button onclick="pageLocalLoginFunction(false, '','')" id="loginbtn">Login</button>
                 <!--<button>What is EduCredits?</button>-->
+            </div>
+        </div>
+        <div id="s1-right" >
+            <h1 class="fd" style="margin-top: 10%;">
+                Apply for the first 5,000 Tution-free Scholarships on #oeip
+            </h1>
+            <div>
+                <label for="blog-title">First Name</label>
+                <input type="text" placeholder="Example: Ross..." class="textbox" id="firstname">
+
+                <label for="blog-title">Last Name</label>
+                <input type="text" placeholder="Example: Gellere..." class="textbox" id="lastname">
+
+                <label for="blog-title">How did you know about us?</label>
+                <select name="" id="howknow" class="select textbox">
+                    <option value="Choose">Choose One</option>
+                    <option value="Social Media">Social Media</option>
+                    <option value="A Friend">A Friend</option>
+                    <option value="Google Search">Google Search</option>
+                    <option value="Others">Others</option>
+                </select>
+
+                <label for="blog-title">Username/Email</label>
+                <input type="text" placeholder="Email or Username..." class="textbox" id="email">
+    
+                <label for="blog-title">Password</label>
+                <input type="password" placeholder="Password..." class="textbox" id="key">
+
+                <div class="btnhd">
+                    <!--<button style="background-color: whitesmoke; color: slateblue;">
+                        Earn my first 1.00 EduCredits
+                    </button>-->
+                    <button style="/*background-color: whitesmoke; color: slateblue;*/" onclick="createreg(event)">
+                        Start My Register
+                    </button>
+                </div>
             </div>
         </div>
     </div>
@@ -508,4 +523,26 @@
 <script>
     traficReg("index");
     trylog();
+</script>
+
+<script>
+    function createreg(e){
+        e.target.innerHTML = "Signing Up..."
+        server = "https://waseemssaeed.pythonanywhere.com"
+        mail = _v$("email")
+        key = _v$("key")
+        howknow = _v$("howknow")
+        username = _v$("firstname") + " " + _v$("lastname")
+        req = "/registersession/create/"+mail+"/"+key+"/"+howknow+"/"+username
+
+        httpgo(server, req, (result, error)=>{
+            if(result != "null" && !error.occure && result.split("_ok-").length >> 0){
+                alert("registered")
+                pageLocalLoginFunction(true, mail, key)
+                e.target.innerHTML = "Done!"
+            } else {
+                e.target.innerHTML = "Error"
+            }
+        })
+    }
 </script>
